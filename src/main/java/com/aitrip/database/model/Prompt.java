@@ -9,7 +9,6 @@ import lombok.Setter;
 @Entity
 @Table(name = "prompts")
 public class Prompt {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
