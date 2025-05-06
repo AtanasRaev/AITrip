@@ -12,30 +12,29 @@ import java.util.Date;
 @Entity
 @Table(name = "plans")
 public class Plan {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column
+    @Column(nullable = false)
     private String origin;
 
     @Column
     private String destination;
 
-    @Column(name = "start_date")
+    @Column(name = "start_date", nullable = false)
     private Date startDate;
 
-    @Column(name = "end_date")
+    @Column(name = "end_date", nullable = false)
     private Date endDate;
 
-    @Column
+    @Column(nullable = false)
     private BigDecimal budget;
 
     @Column(nullable = false)
     private int adults;
 
-    @Column
+    @Column(nullable = false)
     private int children;
 
     @Column(name = "travel_interests")
@@ -49,6 +48,4 @@ public class Plan {
 
     @Column(name = "visa_requirements")
     private String visaRequirements;
-
-
 }
