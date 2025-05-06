@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: AITrip
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+  security:
+    user:
+      name: ''
+      password: ''
