@@ -2,10 +2,12 @@ package com.aitrip.database.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Service
@@ -23,10 +25,10 @@ public class Plan {
     private String destination;
 
     @Column(name = "start_date", nullable = false)
-    private Date startDate;
+    private LocalDateTime startDate;
 
     @Column(name = "end_date", nullable = false)
-    private Date endDate;
+    private LocalDateTime endDate;
 
     @Column(nullable = false)
     private BigDecimal budget;
@@ -48,4 +50,17 @@ public class Plan {
 
     @Column(name = "visa_requirements")
     private String visaRequirements;
+
+    @Column
+    private String notes;
+
+    @CreationTimestamp
+    @Column(name = "created_ad", nullable = false, updatable = false)
+    private LocalDateTime createdAt;
+
+    @UpdateTimestamp
+    @Column(name = "updated_at", nullable = false)
+    private LocalDateTime updatedAt;
+
+    //TODO: USER relation to the plan when we setup the security
 }
