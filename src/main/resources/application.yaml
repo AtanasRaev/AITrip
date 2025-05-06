@@ -17,3 +17,8 @@ spring:
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
     driver-class-name: org.postgresql.Driver
+app:
+  amadeus:
+    api:
+      key: ${AMADEUS_API_KEY}
+      secret: ${AMADEUS_API_SECRET}
