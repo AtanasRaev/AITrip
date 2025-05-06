@@ -22,3 +22,6 @@ app:
     api:
       key: ${AMADEUS_API_KEY}
       secret: ${AMADEUS_API_SECRET}
+  openai:
+    api:
+      key: ${OPENAI_API_KEY}
