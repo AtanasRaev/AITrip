@@ -36,22 +36,19 @@ public class OpenAIServiceImpl implements OpenAIService {
     }
 
     @Override
-    public PlanPageDTO createPlan(PlanCreateDTO planCreateDTO, String planName) {
+    public PlanPageDTO createPlan(PlanCreateDTO planCreateDTO) {
         if (planCreateDTO == null) {
             throw new NullPlanCreateDTOException();
         }
 
-        if (planName == null) {
-            throw new NullPlanNameException();
-        }
-
-        PromptDTO prompt = getAndValidatePrompt(planName);
+        PromptDTO prompt = getAndValidatePrompt(planCreateDTO.getPlanName());
 
         String userPrompt = setVariables(planCreateDTO, prompt);
         prompt.setUserPrompt(userPrompt);
 
         OpenAIResponseDTO response = sendPrompt(prompt);
 
+        //TODO: Finish the implementation
         return null;
     }
 
