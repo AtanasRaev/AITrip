@@ -32,6 +32,7 @@ dependencies {
     implementation 'org.modelmapper:modelmapper:2.1.1'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'com.openai:openai-java:1.6.0'
+    implementation 'org.json:json:20231013'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
