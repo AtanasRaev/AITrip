@@ -9,4 +9,6 @@ public class PromptDTO {
     private String systemPrompt;
 
     private String userPrompt;
+
+    private String model;
 }
