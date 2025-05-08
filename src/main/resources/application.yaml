@@ -25,3 +25,6 @@ app:
   openai:
     api:
       key: ${OPENAI_API_KEY}
+  numverify:
+    api:
+      key: ${NUMVERIFY_API_KEY}
