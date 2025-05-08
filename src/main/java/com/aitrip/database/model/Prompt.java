@@ -13,12 +13,15 @@ public class Prompt {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "plan_name")
+    @Column(name = "plan_name", nullable = false)
     private String planName;
 
-    @Column(name = "system_prompt")
+    @Column(name = "system_prompt", nullable = false)
     private String systemPrompt;
 
-    @Column(name = "user_prompt")
+    @Column(name = "user_prompt", nullable = false)
     private String userPrompt;
+
+    @Column(nullable = false)
+    private String model;
 }

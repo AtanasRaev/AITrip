@@ -78,7 +78,6 @@ public class OpenAIServiceImpl implements OpenAIService {
         return prompt;
     }
 
-
     private void validatePrompt(PromptDTO promptDTO) {
         if (promptDTO == null) {
             throw new NullPromptException();
