@@ -45,4 +45,7 @@ public class SecurityConfig {
     public UserDetailsService userDetailsService() {
         return new InMemoryUserDetailsManager();
     }
+
+    //@Bean
+    //Password encoder
 }
