@@ -21,6 +21,7 @@ public class AmadeusServiceImpl implements AmadeusService {
         this.amadeusConfig = amadeusConfig;
     }
 
+    //TODO: cache this method, can you use the cache the in other method or does it start again
     private String generateAccessToken() {
         MultiValueMap<String, String> formData = getFormData();
 
