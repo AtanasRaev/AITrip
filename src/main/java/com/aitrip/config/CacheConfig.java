@@ -24,7 +24,7 @@ public class CacheConfig {
                                     Object value,
                                     long currentTime) {
                                 TokenResponseDTO token = (TokenResponseDTO) value;
-                                long ttl = token.getExpiresIn() - 60;          // seconds
+                                long ttl = token.getExpiresIn() - 60;
                                 return TimeUnit.SECONDS.toNanos(Math.max(ttl, 0));
                             }
 

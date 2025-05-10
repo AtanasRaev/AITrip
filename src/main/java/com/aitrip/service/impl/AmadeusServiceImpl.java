@@ -35,6 +35,7 @@ public class AmadeusServiceImpl implements AmadeusService {
                 .toEntity(FlightResponseDTO.class).getBody();
     }
 
+    //TODO: Consider if we need to add logic to catch an error where the access token has expired and we need to manually renew it.
     private FlightRequestDTO createFlightRequest(PlanCreateDTO planCreateDTO) {
         FlightRequestDTO flightRequest = new FlightRequestDTO();
         FlightRequestDTO.DestinationDTO origin = new FlightRequestDTO.DestinationDTO(
