@@ -7,7 +7,6 @@ import com.aitrip.database.dto.PromptDTO;
 import com.aitrip.exception.EmptySystemPromptException;
 import com.aitrip.exception.EmptyUserPromptException;
 import com.aitrip.exception.NullPlanCreateDTOException;
-import com.aitrip.exception.NullPlanNameException;
 import com.aitrip.exception.NullPromptException;
 import com.aitrip.service.OpenAIService;
 import com.aitrip.service.PromptService;
