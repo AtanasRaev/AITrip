@@ -12,6 +12,9 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 public class PlanCreateDTO {
+    @NotBlank(message = "Plan name is required")
+    private String planName;
+
     @NotBlank(message = "Origin is required")
     private String origin;
 

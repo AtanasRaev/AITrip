@@ -24,8 +24,7 @@ public class PlanServiceImpl implements PlanService {
     @Override
     public PlanPageDTO savePlan(PlanCreateDTO planCreateDTO) {
         //TODO: Finish the implementation
-        String planName = "";
-        this.openAiService.createPlan(planCreateDTO, planName);
+        this.openAiService.createPlan(planCreateDTO);
         return null;
     }
 }
