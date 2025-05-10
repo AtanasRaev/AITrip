@@ -7,7 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -21,10 +21,10 @@ public class PlanCreateDTO {
     private String destination;
 
     @NotNull(message = "Start date is required")
-    private LocalDateTime startDate;
+    private LocalDate startDate;
 
     @NotNull(message = "End date is required")
-    private LocalDateTime endDate;
+    private LocalDate endDate;
 
     @NotNull(message = "Budget is required")
     @Min(value = 0, message = "Budget must be greater than or equal to 0")
