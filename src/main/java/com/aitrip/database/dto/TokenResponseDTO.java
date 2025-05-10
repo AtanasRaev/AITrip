@@ -9,4 +9,7 @@ import lombok.Setter;
 public class TokenResponseDTO {
     @JsonProperty("access_token")
     String accessToken;
+
+    @JsonProperty("expires_in")
+    long expiresIn;
 }
