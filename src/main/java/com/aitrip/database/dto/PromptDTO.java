@@ -1,5 +1,7 @@
 package com.aitrip.database.dto;
 
+import com.openai.models.ChatModel;
+import com.openai.models.ReasoningEffort;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,5 +12,17 @@ public class PromptDTO {
 
     private String userPrompt;
 
-    private String model;
+    private ChatModel model;
+
+    private Long maxCompletionsTokens;
+
+    private Double temperature;
+
+    private Double presencePenalty;
+
+    private Double frequencyPenalty;
+
+    private Double topP;
+
+    private ReasoningEffort reasoningEffort;
 }
