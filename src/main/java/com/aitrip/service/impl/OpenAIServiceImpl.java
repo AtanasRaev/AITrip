@@ -1,9 +1,9 @@
 package com.aitrip.service.impl;
 
-import com.aitrip.database.dto.OpenAIResponseDTO;
-import com.aitrip.database.dto.PlanCreateDTO;
-import com.aitrip.database.dto.PlanPageDTO;
-import com.aitrip.database.dto.PromptDTO;
+import com.aitrip.database.dto.openAI.OpenAIResponseDTO;
+import com.aitrip.database.dto.plan.PlanCreateDTO;
+import com.aitrip.database.dto.plan.PlanPageDTO;
+import com.aitrip.database.dto.prompt.PromptDTO;
 import com.aitrip.exception.EmptySystemPromptException;
 import com.aitrip.exception.EmptyUserPromptException;
 import com.aitrip.exception.NullPlanCreateDTOException;

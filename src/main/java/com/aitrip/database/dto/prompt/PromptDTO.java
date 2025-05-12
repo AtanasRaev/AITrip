@@ -1,4 +1,4 @@
-package com.aitrip.database.dto;
+package com.aitrip.database.dto.prompt;
 
 import com.openai.models.ChatModel;
 import com.openai.models.ReasoningEffort;

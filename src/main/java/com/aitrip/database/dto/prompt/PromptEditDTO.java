@@ -1,4 +1,4 @@
-package com.aitrip.database.dto;
+package com.aitrip.database.dto.prompt;
 
 import lombok.Getter;
 import lombok.Setter;

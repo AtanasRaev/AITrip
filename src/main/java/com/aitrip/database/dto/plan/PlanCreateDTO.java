@@ -1,4 +1,4 @@
-package com.aitrip.database.dto;
+package com.aitrip.database.dto.plan;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

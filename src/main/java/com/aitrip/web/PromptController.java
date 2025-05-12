@@ -1,8 +1,8 @@
 package com.aitrip.web;
 
-import com.aitrip.database.dto.PromptCreateDTO;
-import com.aitrip.database.dto.PromptDTO;
-import com.aitrip.database.dto.PromptEditDTO;
+import com.aitrip.database.dto.prompt.PromptCreateDTO;
+import com.aitrip.database.dto.prompt.PromptDTO;
+import com.aitrip.database.dto.prompt.PromptEditDTO;
 import com.aitrip.service.PromptService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;

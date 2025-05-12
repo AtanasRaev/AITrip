@@ -1,7 +1,7 @@
 package com.aitrip.service.impl;
 
-import com.aitrip.database.dto.PlanCreateDTO;
-import com.aitrip.database.dto.PlanPageDTO;
+import com.aitrip.database.dto.plan.PlanCreateDTO;
+import com.aitrip.database.dto.plan.PlanPageDTO;
 import com.aitrip.database.repository.PlanRepository;
 import com.aitrip.service.OpenAIService;
 import com.aitrip.service.PlanService;

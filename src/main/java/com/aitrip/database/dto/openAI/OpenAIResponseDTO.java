@@ -1,4 +1,4 @@
-package com.aitrip.database.dto;
+package com.aitrip.database.dto.openAI;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;

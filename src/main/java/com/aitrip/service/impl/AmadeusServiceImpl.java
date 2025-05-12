@@ -1,6 +1,6 @@
 package com.aitrip.service.impl;
 
-import com.aitrip.database.dto.PlanCreateDTO;
+import com.aitrip.database.dto.plan.PlanCreateDTO;
 import com.aitrip.database.dto.flight.request.FlightRequestDTO;
 import com.aitrip.database.dto.flight.response.FlightResponseDTO;
 import com.aitrip.service.AmadeusService;

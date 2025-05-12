@@ -1,4 +1,4 @@
-package com.aitrip.database.dto;
+package com.aitrip.database.dto.plan;
 
 import lombok.Getter;
 import lombok.Setter;

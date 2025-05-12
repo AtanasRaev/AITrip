@@ -1,6 +1,6 @@
 package com.aitrip.web;
 
-import com.aitrip.database.dto.PlanCreateDTO;
+import com.aitrip.database.dto.plan.PlanCreateDTO;
 import com.aitrip.service.PlanService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

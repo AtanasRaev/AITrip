@@ -1,8 +1,8 @@
 package com.aitrip.service.impl;
 
-import com.aitrip.database.dto.PromptCreateDTO;
-import com.aitrip.database.dto.PromptDTO;
-import com.aitrip.database.dto.PromptEditDTO;
+import com.aitrip.database.dto.prompt.PromptCreateDTO;
+import com.aitrip.database.dto.prompt.PromptDTO;
+import com.aitrip.database.dto.prompt.PromptEditDTO;
 import com.aitrip.database.model.Prompt;
 import com.aitrip.database.repository.PromptRepository;
 import com.aitrip.exception.NullPromptException;
