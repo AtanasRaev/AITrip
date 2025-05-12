@@ -96,6 +96,19 @@ public class GlobalExceptionHandler {
     }
 
     /**
+     * Handles specific PromptNotFoundException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(PromptNotFoundException.class)
+    public ResponseEntity<Object> handlePromptNotFoundException(
+            PromptNotFoundException ex, WebRequest request) {
+        return createErrorResponse(ex, request, HttpStatus.NOT_FOUND);
+    }
+
+    /**
      * Creates a standardized error response.
      * 
      * @param ex The exception
