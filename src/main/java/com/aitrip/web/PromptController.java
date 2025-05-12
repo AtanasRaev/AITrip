@@ -8,6 +8,7 @@ import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -17,6 +18,15 @@ public class PromptController {
 
     public PromptController(PromptService promptService) {
         this.promptService = promptService;
+    }
+
+    @GetMapping
+    public ResponseEntity<Map<String, Object>> getAllPrompts() {
+        List<PromptDTO> allPromptsDTO = this.promptService.getAll();
+        return ResponseEntity.ok().body(Map.of(
+                "message", "Prompts retrieved successfully",
+                "prompts", allPromptsDTO
+        ));
     }
 
     @GetMapping("/{id}")
