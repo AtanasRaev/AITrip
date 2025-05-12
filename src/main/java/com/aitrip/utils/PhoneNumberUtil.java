@@ -26,7 +26,7 @@ public class PhoneNumberUtil {
     public void validatePhoneNumber(String phoneNumber) {
         try {
             String url = UriComponentsBuilder
-                    .fromHttpUrl("http://apilayer.net/api/validate")
+                    .fromUriString("http://apilayer.net/api/validate")
                     .queryParam("access_key", apiKey)
                     .queryParam("number", phoneNumber)
                     .toUriString();
