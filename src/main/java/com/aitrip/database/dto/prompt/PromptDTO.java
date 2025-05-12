@@ -8,6 +8,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PromptDTO {
+    private Long id;
+
+    private String planName;
+
     private String systemPrompt;
 
     private String userPrompt;
