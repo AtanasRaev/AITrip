@@ -22,7 +22,6 @@ public class PromptCreateDTO {
     @NotNull
     private ChatModel model;
 
-    @NotNull
     @Positive
     private Long maxCompletionsTokens;
 
