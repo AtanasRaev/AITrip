@@ -1,5 +1,6 @@
 package com.aitrip.database.model;
 
+import com.aitrip.utils.ChatModelConverter;
 import com.aitrip.utils.ReasoningEffortConverter;
 import com.openai.models.ChatModel;
 import com.openai.models.ReasoningEffort;
@@ -25,7 +26,7 @@ public class Prompt {
     @Column(name = "user_prompt", nullable = false)
     private String userPrompt;
 
-    @Convert(converter = ReasoningEffortConverter.class)
+    @Convert(converter = ChatModelConverter.class)
     @Column(nullable = false)
     private ChatModel model;
 
