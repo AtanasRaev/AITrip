@@ -28,6 +28,9 @@ public class PromptServiceImpl implements PromptService {
 
     @Override
     public PromptDTO getPromptByPlanName(String planName) {
+        if (planName == null) {
+            throw new NullPromptException("Plan name cannot be null");
+        }
         return this.promptRepository.findByPlanName(planName)
                 .map(prompt -> this.modelMapper.map(prompt, PromptDTO.class))
                 .orElse(null);
@@ -35,6 +38,9 @@ public class PromptServiceImpl implements PromptService {
 
     @Override
     public PromptDTO getPromptById(Long id) {
+        if (id == null) {
+            throw new NullPromptException("Prompt ID cannot be null");
+        }
         return this.promptRepository.findById(id)
                 .map(p -> this.modelMapper.map(p, PromptDTO.class))
                 .orElse(null);
@@ -43,7 +49,7 @@ public class PromptServiceImpl implements PromptService {
     @Override
     public PromptDTO createPrompt(PromptCreateDTO promptCreateDTO) {
         if (promptCreateDTO == null) {
-            throw new NullPromptException();
+            throw new NullPromptException("Prompt create data cannot be null");
         }
 
         Prompt prompt = this.modelMapper.map(promptCreateDTO, Prompt.class);
@@ -56,6 +62,12 @@ public class PromptServiceImpl implements PromptService {
 
     @Override
     public PromptDTO editPromptById(Long id, PromptEditDTO promptEditDTO) {
+        if (id == null) {
+            throw new NullPromptException("Prompt ID cannot be null");
+        }
+        if (promptEditDTO == null) {
+            throw new NullPromptException("Prompt edit data cannot be null");
+        }
         Optional<Prompt> optional = this.promptRepository.findById(id);
         if (optional.isEmpty()) {
             throw new PromptNotFoundException("Prompt not found with ID: " + id);
@@ -73,6 +85,9 @@ public class PromptServiceImpl implements PromptService {
 
     @Override
     public Long deletePromptById(Long id) {
+        if (id == null) {
+            throw new NullPromptException("Prompt ID cannot be null");
+        }
         Optional<Prompt> optional = this.promptRepository.findById(id);
         if (optional.isEmpty()) {
             throw new PromptNotFoundException("Prompt not found with ID: " + id);
@@ -91,9 +106,9 @@ public class PromptServiceImpl implements PromptService {
     }
 
     private static void setModelParams(ChatModel model, Prompt prompt) {
-        if (model != ChatModel.O3 &&
-                model != ChatModel.O3_MINI &&
-                model != ChatModel.O4_MINI) {
+        if (model.value() != ChatModel.O3.value() &&
+                model.value() != ChatModel.O3_MINI.value() &&
+                model.value() != ChatModel.O4_MINI.value()) {
             prompt.setReasoningEffort(null);
         } else {
             prompt.setTemperature(null);
