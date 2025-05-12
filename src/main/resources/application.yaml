@@ -1,10 +1,13 @@
 spring:
+  main:
+    lazy-initialization: true
   application:
     name: AITrip
   jpa:
     properties:
       hibernate:
-        format_sql: 'TRUE'
+        format_sql: false
+        generate_statistics: false
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
