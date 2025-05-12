@@ -43,7 +43,6 @@ public class OpenAIServiceImpl implements OpenAIService {
         PromptDTO prompt = getAndValidatePrompt(planCreateDTO.getPlanName());
 
         String userPrompt = setVariables(planCreateDTO, prompt);
-        prompt.setUserPrompt(userPrompt);
 
         OpenAIResponseDTO response = sendPrompt(prompt);
 
