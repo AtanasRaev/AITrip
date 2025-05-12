@@ -2,14 +2,17 @@ package com.aitrip.database.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
+@Setter
 @Service
 @Entity
 @Table(name = "plans")
@@ -61,6 +64,9 @@ public class Plan {
     @UpdateTimestamp
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt;
+
+    @OneToMany(mappedBy = "plan", cascade = CascadeType.ALL)
+    private List<AIUsage> aiUsages;
 
     //TODO: USER relation to the plan when we setup the security
 }
