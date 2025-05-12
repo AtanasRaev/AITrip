@@ -12,6 +12,7 @@ import com.openai.models.ChatModel;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -79,6 +80,14 @@ public class PromptServiceImpl implements PromptService {
 
         this.promptRepository.deleteById(id);
         return id;
+    }
+
+    @Override
+    public List<PromptDTO> getAll() {
+        return this.promptRepository.findAll()
+                .stream()
+                .map(prompt -> this.modelMapper.map(prompt, PromptDTO.class))
+                .toList();
     }
 
     private static void setModelParams(ChatModel model, Prompt prompt) {
