@@ -28,3 +28,5 @@ app:
   numverify:
     api:
       key: ${NUMVERIFY_API_KEY}
+server:
+  port: ${PORT:8080}
