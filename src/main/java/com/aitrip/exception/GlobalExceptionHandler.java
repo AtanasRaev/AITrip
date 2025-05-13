@@ -1,5 +1,15 @@
 package com.aitrip.exception;
 
+import com.aitrip.exception.external.amadeus.AmadeusTokenNotFoundException;
+import com.aitrip.exception.external.phone.InvalidPhoneNumberException;
+import com.aitrip.exception.external.phone.PhoneValidationServiceException;
+import com.aitrip.exception.plan.NullPlanCreateDTOException;
+import com.aitrip.exception.plan.NullPlanNameException;
+import com.aitrip.exception.prompt.EmptySystemPromptException;
+import com.aitrip.exception.prompt.EmptyUserPromptException;
+import com.aitrip.exception.prompt.NullPromptException;
+import com.aitrip.exception.prompt.PromptNotFoundException;
+import com.aitrip.exception.prompt.PromptValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -106,6 +116,45 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Object> handlePromptNotFoundException(
             PromptNotFoundException ex, WebRequest request) {
         return createErrorResponse(ex, request, HttpStatus.NOT_FOUND);
+    }
+
+    /**
+     * Handles specific AmadeusTokenNotFoundException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(AmadeusTokenNotFoundException.class)
+    public ResponseEntity<Object> handleAmadeusTokenNotFoundException(
+            AmadeusTokenNotFoundException ex, WebRequest request) {
+        return createErrorResponse(ex, request, HttpStatus.NOT_FOUND);
+    }
+
+    /**
+     * Handles specific InvalidPhoneNumberException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(InvalidPhoneNumberException.class)
+    public ResponseEntity<Object> handleInvalidPhoneNumberException(
+            InvalidPhoneNumberException ex, WebRequest request) {
+        return createErrorResponse(ex, request, HttpStatus.BAD_REQUEST);
+    }
+
+    /**
+     * Handles specific PhoneValidationServiceException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(PhoneValidationServiceException.class)
+    public ResponseEntity<Object> handlePhoneValidationServiceException(
+            PhoneValidationServiceException ex, WebRequest request) {
+        return createErrorResponse(ex, request, HttpStatus.SERVICE_UNAVAILABLE);
     }
 
     /**

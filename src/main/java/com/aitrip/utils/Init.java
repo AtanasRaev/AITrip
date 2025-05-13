@@ -1,9 +1,11 @@
 package com.aitrip.utils;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
+@Profile("!test") // Don't run during tests
 public class Init implements CommandLineRunner {
 
     private final PhoneNumberUtil phoneNumberUtil;
