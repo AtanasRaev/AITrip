@@ -1,4 +1,4 @@
-package com.aitrip.exception;
+package com.aitrip.exception.external.phone;
 
 public class InvalidPhoneNumberException extends RuntimeException {
     public InvalidPhoneNumberException(String message) {

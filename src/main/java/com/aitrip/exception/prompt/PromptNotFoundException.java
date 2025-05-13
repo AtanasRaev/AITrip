@@ -1,4 +1,4 @@
-package com.aitrip.exception;
+package com.aitrip.exception.prompt;
 
 /**
  * Exception thrown when a Prompt with a specific ID is not found.

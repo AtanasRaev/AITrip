@@ -1,4 +1,4 @@
-package com.aitrip.exception;
+package com.aitrip.exception.prompt;
 
 /**
  * Exception thrown when a user prompt is null or empty.

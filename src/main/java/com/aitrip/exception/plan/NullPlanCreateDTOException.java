@@ -1,4 +1,4 @@
-package com.aitrip.exception;
+package com.aitrip.exception.plan;
 
 /**
  * Exception thrown when a PlanCreateDTO is null.

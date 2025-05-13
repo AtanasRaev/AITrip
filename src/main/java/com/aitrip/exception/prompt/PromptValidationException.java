@@ -1,4 +1,4 @@
-package com.aitrip.exception;
+package com.aitrip.exception.prompt;
 
 /**
  * Base exception class for prompt validation errors.
