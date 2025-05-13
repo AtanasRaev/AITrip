@@ -16,8 +16,6 @@ spring:
     init:
       mode: never
   datasource:
-    hikari:
-      maximum-pool-size: 10
     url: ${DATABASE_URL}
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
