@@ -4,10 +4,10 @@ import com.aitrip.database.dto.openAI.OpenAIResponseDTO;
 import com.aitrip.database.dto.plan.PlanCreateDTO;
 import com.aitrip.database.dto.plan.PlanPageDTO;
 import com.aitrip.database.dto.prompt.PromptDTO;
-import com.aitrip.exception.EmptySystemPromptException;
-import com.aitrip.exception.EmptyUserPromptException;
-import com.aitrip.exception.NullPlanCreateDTOException;
-import com.aitrip.exception.NullPromptException;
+import com.aitrip.exception.plan.NullPlanCreateDTOException;
+import com.aitrip.exception.prompt.EmptySystemPromptException;
+import com.aitrip.exception.prompt.EmptyUserPromptException;
+import com.aitrip.exception.prompt.NullPromptException;
 import com.aitrip.service.OpenAIService;
 import com.aitrip.service.PromptService;
 import com.openai.client.OpenAIClient;
@@ -64,13 +64,8 @@ public class OpenAIServiceImpl implements OpenAIService {
     }
 
     private PromptDTO getAndValidatePrompt(String planName) {
-        PromptDTO prompt = this.promptService.getPromptByPlanName(planName);
-
-        if (prompt == null) {
-            throw new NullPromptException("Prompt not found for plan name: " + planName);
-        }
-
-        return prompt;
+        // This will throw PromptNotFoundException if prompt is not found
+        return this.promptService.getPromptByPlanName(planName);
     }
 
     private void validatePrompt(PromptDTO promptDTO) {
