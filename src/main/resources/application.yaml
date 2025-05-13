@@ -19,6 +19,8 @@ spring:
     url: ${DATABASE_URL}
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
+    hikari:
+      maximum-pool-size: 10
     driver-class-name: org.postgresql.Driver
 app:
   amadeus:
