@@ -18,10 +18,6 @@ spring:
   datasource:
     hikari:
       maximum-pool-size: 10
-      minimum-idle: 2
-      idle-timeout: 30000        # 30 seconds
-      max-lifetime: 1800000      # 30 minutes
-      connection-timeout: 20000  # 20 seconds
     url: ${DATABASE_URL}
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
