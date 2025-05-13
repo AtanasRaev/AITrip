@@ -2,6 +2,7 @@ package com.aitrip.service.impl;
 
 import com.aitrip.config.AmadeusConfig;
 import com.aitrip.database.dto.TokenResponseDTO;
+import com.aitrip.exception.external.amadeus.AmadeusTokenNotFoundException;
 import com.aitrip.service.AmadeusTokenService;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.MediaType;
@@ -31,7 +32,7 @@ public class AmadeusTokenServiceImpl implements AmadeusTokenService {
                 .retrieve()
                 .toEntity(TokenResponseDTO.class)
                 .getBody();
-        if (dto == null) throw new RuntimeException("…");
+        if (dto == null) throw new AmadeusTokenNotFoundException("Failed to retrieve Amadeus access token");
         return dto;
     }
 
