@@ -14,6 +14,7 @@ import com.openai.client.OpenAIClient;
 import com.openai.models.ChatModel;
 import com.openai.models.chat.completions.ChatCompletion;
 import com.openai.models.chat.completions.ChatCompletionCreateParams;
+import org.jetbrains.annotations.NotNull;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -42,7 +43,11 @@ public class OpenAIServiceImpl implements OpenAIService {
 
         PromptDTO prompt = getAndValidatePrompt(planCreateDTO.getPlanName());
 
-        String userPrompt = setVariables(planCreateDTO, prompt);
+        String userPrompt = setVariables(planCreateDTO, prompt.getUserPrompt());
+        String systemPrompt = setVariables(planCreateDTO, prompt.getSystemPrompt());
+
+        prompt.setUserPrompt(userPrompt);
+        prompt.setSystemPrompt(systemPrompt);
 
         OpenAIResponseDTO response = sendPrompt(prompt);
 
@@ -53,18 +58,45 @@ public class OpenAIServiceImpl implements OpenAIService {
     private OpenAIResponseDTO sendPrompt(PromptDTO promptDTO) {
         validatePrompt(promptDTO);
 
-        ChatCompletionCreateParams params = ChatCompletionCreateParams.builder()
-                .model(ChatModel.GPT_4_1)
-                .addSystemMessage(promptDTO.getSystemPrompt())
-                .addUserMessage(promptDTO.getUserPrompt())
-                .build();
-
+        ChatCompletionCreateParams params = setupOpenAIParams(promptDTO);
         ChatCompletion chatCompletion = this.client.chat().completions().create(params);
         return this.modelMapper.map(chatCompletion, OpenAIResponseDTO.class);
     }
 
+    private static ChatCompletionCreateParams setupOpenAIParams(PromptDTO promptDTO) {
+        ChatCompletionCreateParams.Builder paramsBuilder = ChatCompletionCreateParams.builder()
+                .model(promptDTO.getModel())
+                .addSystemMessage(promptDTO.getSystemPrompt())
+                .addUserMessage(promptDTO.getUserPrompt());
+
+        if (promptDTO.getMaxCompletionsTokens() != null) {
+            paramsBuilder.maxCompletionTokens(promptDTO.getMaxCompletionsTokens());
+        }
+
+        if (promptDTO.getTemperature() != null) {
+            paramsBuilder.temperature(promptDTO.getTemperature());
+        }
+
+        if (promptDTO.getTopP() != null) {
+            paramsBuilder.topP(promptDTO.getTopP());
+        }
+
+        if (promptDTO.getFrequencyPenalty() != null) {
+            paramsBuilder.frequencyPenalty(promptDTO.getFrequencyPenalty());
+        }
+
+        if (promptDTO.getPresencePenalty() != null) {
+            paramsBuilder.presencePenalty(promptDTO.getPresencePenalty());
+        }
+
+        if (promptDTO.getReasoningEffort() != null) {
+            paramsBuilder.reasoningEffort(promptDTO.getReasoningEffort());
+        }
+
+        return paramsBuilder.build();
+    }
+
     private PromptDTO getAndValidatePrompt(String planName) {
-        // This will throw PromptNotFoundException if prompt is not found
         return this.promptService.getPromptByPlanName(planName);
     }
 
@@ -82,8 +114,7 @@ public class OpenAIServiceImpl implements OpenAIService {
         }
     }
 
-    private String setVariables(PlanCreateDTO planCreateDTO, PromptDTO prompt) {
-        String userPrompt = prompt.getUserPrompt();
+    private String setVariables(PlanCreateDTO planCreateDTO, String prompt) {
         Map<String, String> replacements = buildReplacementsMap(planCreateDTO);
 
         for (Map.Entry<String, String> entry : replacements.entrySet()) {
@@ -91,11 +122,11 @@ public class OpenAIServiceImpl implements OpenAIService {
             String value = entry.getValue();
 
             if (value != null) {
-                userPrompt = userPrompt.replace(placeholder, value);
+                prompt = prompt.replace(placeholder, value);
             }
         }
 
-        return userPrompt;
+        return prompt;
     }
 
     private Map<String, String> buildReplacementsMap(PlanCreateDTO planCreateDTO) {
