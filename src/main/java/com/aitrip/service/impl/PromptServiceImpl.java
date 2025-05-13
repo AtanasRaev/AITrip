@@ -5,8 +5,8 @@ import com.aitrip.database.dto.prompt.PromptDTO;
 import com.aitrip.database.dto.prompt.PromptEditDTO;
 import com.aitrip.database.model.Prompt;
 import com.aitrip.database.repository.PromptRepository;
-import com.aitrip.exception.NullPromptException;
-import com.aitrip.exception.PromptNotFoundException;
+import com.aitrip.exception.prompt.NullPromptException;
+import com.aitrip.exception.prompt.PromptNotFoundException;
 import com.aitrip.service.PromptService;
 import com.openai.models.ChatModel;
 import org.modelmapper.ModelMapper;
@@ -33,7 +33,7 @@ public class PromptServiceImpl implements PromptService {
         }
         return this.promptRepository.findByPlanName(planName)
                 .map(prompt -> this.modelMapper.map(prompt, PromptDTO.class))
-                .orElse(null);
+                .orElseThrow(() -> new PromptNotFoundException("Prompt not found with plan name: " + planName));
     }
 
     @Override
@@ -43,7 +43,7 @@ public class PromptServiceImpl implements PromptService {
         }
         return this.promptRepository.findById(id)
                 .map(p -> this.modelMapper.map(p, PromptDTO.class))
-                .orElse(null);
+                .orElseThrow(() -> new PromptNotFoundException("Prompt not found with ID: " + id));
     }
 
     @Override

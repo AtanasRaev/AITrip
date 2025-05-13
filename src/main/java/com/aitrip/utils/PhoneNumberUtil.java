@@ -1,7 +1,7 @@
 package com.aitrip.utils;
 
-import com.aitrip.exception.InvalidPhoneNumberException;
-import com.aitrip.exception.PhoneValidationServiceException;
+import com.aitrip.exception.external.phone.InvalidPhoneNumberException;
+import com.aitrip.exception.external.phone.PhoneValidationServiceException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClientException;
