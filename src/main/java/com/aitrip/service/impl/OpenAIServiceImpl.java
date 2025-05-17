@@ -11,10 +11,8 @@ import com.aitrip.exception.prompt.NullPromptException;
 import com.aitrip.service.OpenAIService;
 import com.aitrip.service.PromptService;
 import com.openai.client.OpenAIClient;
-import com.openai.models.ChatModel;
 import com.openai.models.chat.completions.ChatCompletion;
 import com.openai.models.chat.completions.ChatCompletionCreateParams;
-import org.jetbrains.annotations.NotNull;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
