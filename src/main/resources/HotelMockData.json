@@ -1,0 +1,4390 @@
+{
+  "data": [
+    {
+      "chainCode": "AP",
+      "iataCode": "LAX",
+      "dupeId": 700103561,
+      "name": "CHATEAU MARMONT",
+      "hotelId": "APLAXMAR",
+      "geoCode": {
+        "latitude": 34.09825,
+        "longitude": -118.36839
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:47:55"
+    },
+    {
+      "chainCode": "BC",
+      "iataCode": "LAX",
+      "dupeId": 700192778,
+      "name": "AKA BEVERLY HILLS",
+      "hotelId": "BCLAXAKB",
+      "geoCode": {
+        "latitude": 34.06745,
+        "longitude": -118.39655
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:15:40"
+    },
+    {
+      "chainCode": "BH",
+      "iataCode": "LAX",
+      "dupeId": 700048245,
+      "name": "HAWTHORN SUITES MANHATTAN BCH",
+      "hotelId": "BHLAX100",
+      "geoCode": {
+        "latitude": 33.89175,
+        "longitude": -118.39631
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:50"
+    },
+    {
+      "chainCode": "BR",
+      "iataCode": "LAX",
+      "dupeId": 700011755,
+      "name": "RENAISSANCE LOS ANGELES AIRPORT",
+      "hotelId": "BRLAXRRB",
+      "geoCode": {
+        "latitude": 33.94844,
+        "longitude": -118.38584
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-09-30T06:06:48"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700045358,
+      "name": "BEST WESTERN HOLLYWOOD PLAZA I",
+      "hotelId": "BWLAX491",
+      "geoCode": {
+        "latitude": 34.1113,
+        "longitude": -118.33626
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-01T18:50:07"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700029042,
+      "name": "BEST WESTERN PLUS HOLLYWD HILL",
+      "hotelId": "BWLAX204",
+      "geoCode": {
+        "latitude": 34.10533,
+        "longitude": -118.32346
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-21T10:21:04"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700048156,
+      "name": "BEST WESTERN AIRPORT PLAZA INN",
+      "hotelId": "BWLAX463",
+      "geoCode": {
+        "latitude": 33.97699,
+        "longitude": -118.36897
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-01T18:49:15"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700038339,
+      "name": "BEST WESTERN AIRPARK HOTEL",
+      "hotelId": "BWLAX459",
+      "geoCode": {
+        "latitude": 33.96136,
+        "longitude": -118.36697
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-01T20:08:18"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700063738,
+      "name": "BEST WESTERN PLUS SOUTH BAY",
+      "hotelId": "BWLAX336",
+      "geoCode": {
+        "latitude": 33.89539,
+        "longitude": -118.35233
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:09"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700063268,
+      "name": "BEST WESTERN LOS ALAMITOS INN AND SUITES",
+      "hotelId": "BWLAX600",
+      "geoCode": {
+        "latitude": 33.80908,
+        "longitude": -118.07216
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-30T16:48:11"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700063659,
+      "name": "BW ROYAL PALACE INN AND SUITES",
+      "hotelId": "BWLAX268",
+      "geoCode": {
+        "latitude": 34.03452,
+        "longitude": -118.43329
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-04-17T10:37:35"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700062770,
+      "name": "BEST WESTERN PLUS EAGLE ROCK",
+      "hotelId": "BWLAX518",
+      "geoCode": {
+        "latitude": 34.14289,
+        "longitude": -118.22881
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-30T16:44:11"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700063777,
+      "name": "BEST WESTERN PLUS SUITES HOTEL",
+      "hotelId": "BWLAX517",
+      "geoCode": {
+        "latitude": 33.94574,
+        "longitude": -118.36573
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-01T18:50:58"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700028008,
+      "name": "BW PLUS DRAGON GATE INN",
+      "hotelId": "BWLAX341",
+      "geoCode": {
+        "latitude": 34.06414,
+        "longitude": -118.23874
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-30T16:36:33"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700041283,
+      "name": "BEST WESTERN PLUS SUNSET PLAZA",
+      "hotelId": "BWLAX377",
+      "geoCode": {
+        "latitude": 34.09503,
+        "longitude": -118.37271
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-01T18:47:07"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700067565,
+      "name": "BEST WESTERN PLUS ANAHEIM ORAN",
+      "hotelId": "BWLAX696",
+      "geoCode": {
+        "latitude": 33.86258,
+        "longitude": -117.87224
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-01-07T10:00:07"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700063607,
+      "name": "BEST WESTERN PLUS REDONDO BCH",
+      "hotelId": "BWLAX406",
+      "geoCode": {
+        "latitude": 33.81669,
+        "longitude": -118.37893
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-01T18:47:28"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700038341,
+      "name": "BEST WESTERN REDONDO BEACH GAL",
+      "hotelId": "BWLAX497",
+      "geoCode": {
+        "latitude": 33.87256,
+        "longitude": -118.36149
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-01T18:50:39"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700062578,
+      "name": "BEST WESTERN PLUS CARRIAGE INN",
+      "hotelId": "BWLAX595",
+      "geoCode": {
+        "latitude": 34.17057,
+        "longitude": -118.46636
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-01T18:52:58"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700100847,
+      "name": "BEST WESTERN HARBOUR INN STES",
+      "hotelId": "BWLAX672",
+      "geoCode": {
+        "latitude": 33.71608,
+        "longitude": -118.06925
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-30T16:52:15"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700103092,
+      "name": "BW PLUS THOUSAND OAKS INN",
+      "hotelId": "BWLAX651",
+      "geoCode": {
+        "latitude": 34.17812,
+        "longitude": -118.87915
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-01-07T10:28:43"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700118038,
+      "name": "BEST WESTERN PLUS AVITA SUITES",
+      "hotelId": "BWLAX674",
+      "geoCode": {
+        "latitude": 33.83797,
+        "longitude": -118.34826
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-30T16:52:17"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "LAX",
+      "dupeId": 700101291,
+      "name": "BEST WESTERN WOODLAND HILLS",
+      "hotelId": "BWLAX663",
+      "geoCode": {
+        "latitude": 34.1684,
+        "longitude": -118.60326
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-30T16:51:48"
+    },
+    {
+      "chainCode": "CC",
+      "iataCode": "LAX",
+      "dupeId": 700068006,
+      "name": "CLARION INN AT UNIVERSAL STUDIOS HOLLYWO",
+      "hotelId": "CCLAXD46",
+      "geoCode": {
+        "latitude": 34.1288,
+        "longitude": -118.3482
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:27:44"
+    },
+    {
+      "chainCode": "CI",
+      "iataCode": "LAX",
+      "dupeId": 700045820,
+      "name": "COMFORT INN AND SUITES",
+      "hotelId": "CILAX139",
+      "geoCode": {
+        "latitude": 33.96646,
+        "longitude": -118.16487
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:47:39"
+    },
+    {
+      "chainCode": "CI",
+      "iataCode": "LAX",
+      "dupeId": 700047984,
+      "name": "COMFORT INN AND SUITES LAX AIRPORT INGLE",
+      "hotelId": "CILAX063",
+      "geoCode": {
+        "latitude": 33.94516,
+        "longitude": -118.36409
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:51"
+    },
+    {
+      "chainCode": "CI",
+      "iataCode": "LAX",
+      "dupeId": 700070960,
+      "name": "COMFORT INN LOS ANGELES",
+      "hotelId": "CILAX785",
+      "geoCode": {
+        "latitude": 34.08088,
+        "longitude": -118.27042
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:54"
+    },
+    {
+      "chainCode": "CI",
+      "iataCode": "LAX",
+      "dupeId": 700045961,
+      "name": "COMFORT INN NEAR UNIVERSAL STUDIOS HOLLY",
+      "hotelId": "CILAX080",
+      "geoCode": {
+        "latitude": 34.07662,
+        "longitude": -118.2917
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:54"
+    },
+    {
+      "chainCode": "CP",
+      "iataCode": "LAX",
+      "dupeId": 700040638,
+      "name": "CROWNE PLAZA COMMERCE CASINO",
+      "hotelId": "CPLAX442",
+      "geoCode": {
+        "latitude": 33.99906,
+        "longitude": -118.14704
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:07"
+    },
+    {
+      "chainCode": "CP",
+      "iataCode": "LAX",
+      "dupeId": 700011642,
+      "name": "CROWNE PLAZA REDONDO BEACH",
+      "hotelId": "CPLAX703",
+      "geoCode": {
+        "latitude": 33.84535,
+        "longitude": -118.3926
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:10"
+    },
+    {
+      "chainCode": "CX",
+      "iataCode": "LAX",
+      "dupeId": 502038682,
+      "name": "HILTON HOTELS LONDON KENSINGTON",
+      "hotelId": "CXLAXHCP",
+      "geoCode": {
+        "latitude": 48.85693,
+        "longitude": 2.3412
+      },
+      "address": {
+        "countryCode": "FR"
+      },
+      "lastUpdate": "2023-06-15T11:21:37"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700101177,
+      "name": "COURTYARD DISNEYLAND MARRIOTT",
+      "hotelId": "CYLAXADC",
+      "geoCode": {
+        "latitude": 33.79804,
+        "longitude": -117.9153
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-05-05T06:02:27"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700034579,
+      "name": "COURTYARD BALDWIN PRK MARRIOTT",
+      "hotelId": "CYLAXBPC",
+      "geoCode": {
+        "latitude": 34.07168,
+        "longitude": -117.95656
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:05:19"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700102865,
+      "name": "COURTYARD LA WESTSIDE MARRIOTT",
+      "hotelId": "CYLAXCVC",
+      "geoCode": {
+        "latitude": 33.98116,
+        "longitude": -118.39197
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:06:27"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700065666,
+      "name": "COURTYARD LAX EL SEGU MARRIOTT",
+      "hotelId": "CYLAXCAC",
+      "geoCode": {
+        "latitude": 33.92301,
+        "longitude": -118.39157
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:54"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700101026,
+      "name": "COURTYARD HACIENDA HT MARRIOTT",
+      "hotelId": "CYLAXHHC",
+      "geoCode": {
+        "latitude": 33.98841,
+        "longitude": -117.93364
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:07:19"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700100051,
+      "name": "COURTYARD CENTURY CTY MARRIOTT",
+      "hotelId": "CYLAXCEC",
+      "geoCode": {
+        "latitude": 34.05237,
+        "longitude": -118.41689
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:11:51"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700040602,
+      "name": "COURTYARD CENTURY BLV MARRIOTT",
+      "hotelId": "CYLAXCYC",
+      "geoCode": {
+        "latitude": 33.94553,
+        "longitude": -118.38754
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-05-12T06:02:03"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 501415027,
+      "name": "COURTYARD LA LIVE MARRIOTT",
+      "hotelId": "CYLAXLDC",
+      "geoCode": {
+        "latitude": 34.04576,
+        "longitude": -118.26591
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-09-30T06:00:47"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700102984,
+      "name": "COURTYARD MONROVIA MARRIOTT",
+      "hotelId": "CYLAXMRC",
+      "geoCode": {
+        "latitude": 34.1402,
+        "longitude": -118.01485
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:07:26"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700100722,
+      "name": "COURTYARD SHERMAN OAK MARRIOTT",
+      "hotelId": "CYLAXSFC",
+      "geoCode": {
+        "latitude": 34.15543,
+        "longitude": -118.46948
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:02:19"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "LAX",
+      "dupeId": 700068613,
+      "name": "COURTYARD WOODLAND MARRIOTT",
+      "hotelId": "CYLAXCWC",
+      "geoCode": {
+        "latitude": 34.16773,
+        "longitude": -118.59309
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:09:31"
+    },
+    {
+      "chainCode": "CZ",
+      "iataCode": "LAX",
+      "dupeId": 700155173,
+      "name": "COMFORT SUITES NEAR INDUSTRY HILLS EXPO",
+      "hotelId": "CZLAXA66",
+      "geoCode": {
+        "latitude": 34.03229,
+        "longitude": -117.95074
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:18:17"
+    },
+    {
+      "chainCode": "CZ",
+      "iataCode": "LAX",
+      "dupeId": 700103429,
+      "name": "COMFORT SUITES ROSEMEAD",
+      "hotelId": "CZLAX793",
+      "geoCode": {
+        "latitude": 34.0812,
+        "longitude": -118.06318
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:54"
+    },
+    {
+      "chainCode": "DC",
+      "iataCode": "LAX",
+      "dupeId": 700062363,
+      "name": "HOTEL BEL AIR",
+      "hotelId": "DCLAX700",
+      "geoCode": {
+        "latitude": 34.08645,
+        "longitude": -118.44635
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:04:56"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "LAX",
+      "dupeId": 700224560,
+      "name": "RESIDENCE INN BY MARRIOTT LOS ANGELES L.",
+      "hotelId": "DHLAXAKK",
+      "geoCode": {
+        "latitude": 34.04576,
+        "longitude": -118.26591
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:09:17"
+    },
+    {
+      "chainCode": "DI",
+      "iataCode": "LAX",
+      "dupeId": 700103708,
+      "name": "DAYS INN AND SUITES ARTESIA",
+      "hotelId": "DILAX728",
+      "geoCode": {
+        "latitude": 33.87148,
+        "longitude": -118.0822
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:08:52"
+    },
+    {
+      "chainCode": "DI",
+      "iataCode": "LAX",
+      "dupeId": 700104277,
+      "name": "DAYS INN LAX VENICE BEACH",
+      "hotelId": "DILAX412",
+      "geoCode": {
+        "latitude": 33.96023,
+        "longitude": -118.28962
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:25"
+    },
+    {
+      "chainCode": "DI",
+      "iataCode": "LAX",
+      "dupeId": 700104100,
+      "name": "DAYS INN GLENDALE LOS ANGELES",
+      "hotelId": "DILAX600",
+      "geoCode": {
+        "latitude": 34.1552,
+        "longitude": -118.26301
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:41"
+    },
+    {
+      "chainCode": "DT",
+      "iataCode": "LAX",
+      "dupeId": 700037561,
+      "name": "DBLTREE LOS ANGELES - WESTSIDE",
+      "hotelId": "DTLAX611",
+      "geoCode": {
+        "latitude": 33.98246,
+        "longitude": -118.39725
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:49:45"
+    },
+    {
+      "chainCode": "DT",
+      "iataCode": "LAX",
+      "dupeId": 700035617,
+      "name": "DBLTREE LAX EL SEGUNDO",
+      "hotelId": "DTLAXCES",
+      "geoCode": {
+        "latitude": 33.91933,
+        "longitude": -118.39348
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:10"
+    },
+    {
+      "chainCode": "DT",
+      "iataCode": "LAX",
+      "dupeId": 700071217,
+      "name": "DOUBLETREE BY HILTON LOS ANGELES",
+      "hotelId": "DTLAX213",
+      "geoCode": {
+        "latitude": 34.05093,
+        "longitude": -118.24279
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:23:48"
+    },
+    {
+      "chainCode": "DT",
+      "iataCode": "LAX",
+      "dupeId": 700068984,
+      "name": "DOUBLETREE BY HILTON LA NORWALK",
+      "hotelId": "DTLAX562",
+      "geoCode": {
+        "latitude": 33.91154,
+        "longitude": -118.07075
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:18:17"
+    },
+    {
+      "chainCode": "DT",
+      "iataCode": "LAX",
+      "dupeId": 700037045,
+      "name": "DBLTREE BY HILTON LA ROSEMEAD",
+      "hotelId": "DTLAX758",
+      "geoCode": {
+        "latitude": 34.03719,
+        "longitude": -118.0807
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:10"
+    },
+    {
+      "chainCode": "DT",
+      "iataCode": "LAX",
+      "dupeId": 700051993,
+      "name": "DBLTREE BY HILTON SAN PEDRO",
+      "hotelId": "DTLAX280",
+      "geoCode": {
+        "latitude": 33.71861,
+        "longitude": -118.28212
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:54"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700105418,
+      "name": "EXTENDED STAY AMERICA CARSON",
+      "hotelId": "EALAX218",
+      "geoCode": {
+        "latitude": 33.87153,
+        "longitude": -118.27244
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:10"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700107758,
+      "name": "EXTENDED STAY AMERICA EL SEGUN",
+      "hotelId": "EALAXELS",
+      "geoCode": {
+        "latitude": 33.92353,
+        "longitude": -118.39596
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:51"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700066593,
+      "name": "EXTENDED STAY AMERICA LA MIRAD",
+      "hotelId": "EALAX355",
+      "geoCode": {
+        "latitude": 33.87822,
+        "longitude": -118.01716
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:10"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700065708,
+      "name": "EXTENDED STAY AMERICA GARDENA",
+      "hotelId": "EALAX308",
+      "geoCode": {
+        "latitude": 34.06913,
+        "longitude": -118.29168
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:39"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700105406,
+      "name": "EXTENDED STAY AMERICA LAX AIR",
+      "hotelId": "EALAX219",
+      "geoCode": {
+        "latitude": 33.9804,
+        "longitude": -118.39462
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:54"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700107761,
+      "name": "EXTENDED STAY AMERICA MONROVIA",
+      "hotelId": "EALAXMNV",
+      "geoCode": {
+        "latitude": 34.14089,
+        "longitude": -118.02038
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:10"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700105421,
+      "name": "EXTENDED STAY AMERICA NORTHRID",
+      "hotelId": "EALAX272",
+      "geoCode": {
+        "latitude": 34.22983,
+        "longitude": -118.55414
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:54"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700105425,
+      "name": "EXTENDED STAY AMERICA VALENCIA",
+      "hotelId": "EALAX854",
+      "geoCode": {
+        "latitude": 34.37959,
+        "longitude": -118.56822
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:41"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700066592,
+      "name": "EXTENDED STAY AMERICA TORRANCE",
+      "hotelId": "EALAX356",
+      "geoCode": {
+        "latitude": 33.83743,
+        "longitude": -118.34758
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:35"
+    },
+    {
+      "chainCode": "EA",
+      "iataCode": "LAX",
+      "dupeId": 700105426,
+      "name": "EXTENDED STAY AMERICA WOODLAND",
+      "hotelId": "EALAX081",
+      "geoCode": {
+        "latitude": 34.17034,
+        "longitude": -118.5729
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:51"
+    },
+    {
+      "chainCode": "EO",
+      "iataCode": "LAX",
+      "dupeId": 700065956,
+      "name": "ECONO LODGE CARSON NEAR STUBHUB CENTER",
+      "hotelId": "EOLAX431",
+      "geoCode": {
+        "latitude": 33.83182,
+        "longitude": -118.24926
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:57"
+    },
+    {
+      "chainCode": "EO",
+      "iataCode": "LAX",
+      "dupeId": 700066130,
+      "name": "ECONO LODGE NEAR LAX",
+      "hotelId": "EOLAX281",
+      "geoCode": {
+        "latitude": 34.14282,
+        "longitude": -118.23336
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:41"
+    },
+    {
+      "chainCode": "EO",
+      "iataCode": "LAX",
+      "dupeId": 700066361,
+      "name": "ECONO LODGE PICO RIVERA",
+      "hotelId": "EOLAX309",
+      "geoCode": {
+        "latitude": 33.96223,
+        "longitude": -118.11092
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:35"
+    },
+    {
+      "chainCode": "ES",
+      "iataCode": "LAX",
+      "dupeId": 700035618,
+      "name": "ES-LOS ANGELES INTL AP-SOU",
+      "hotelId": "ESLAXG26",
+      "geoCode": {
+        "latitude": 33.93054,
+        "longitude": -118.40071
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:39"
+    },
+    {
+      "chainCode": "FN",
+      "iataCode": "LAX",
+      "dupeId": 700028013,
+      "name": "FAIRFIELD INN ANAHEIM MARRIOTT",
+      "hotelId": "FNLAXOCF",
+      "geoCode": {
+        "latitude": 33.81127,
+        "longitude": -117.9135
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:02:16"
+    },
+    {
+      "chainCode": "FN",
+      "iataCode": "LAX",
+      "dupeId": 700105772,
+      "name": "FAIRFIELD INN HILLS MARRIOTT",
+      "hotelId": "FNLAXAMF",
+      "geoCode": {
+        "latitude": 33.85384,
+        "longitude": -117.78899
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:08:24"
+    },
+    {
+      "chainCode": "FN",
+      "iataCode": "LAX",
+      "dupeId": 700106042,
+      "name": "FAIRFIELD INN CLARITA MARRIOTT",
+      "hotelId": "FNLAXVLF",
+      "geoCode": {
+        "latitude": 34.37877,
+        "longitude": -118.56778
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:05:29"
+    },
+    {
+      "chainCode": "FN",
+      "iataCode": "LAX",
+      "dupeId": 700152976,
+      "name": "FAIRFIELD INN N STES MARRIOTT",
+      "hotelId": "FNLAXFSF",
+      "geoCode": {
+        "latitude": 34.07285,
+        "longitude": -117.87638
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:09:02"
+    },
+    {
+      "chainCode": "FS",
+      "iataCode": "LAX",
+      "dupeId": 700013477,
+      "name": "BEVERLY WILSHIRE, A FOUR SEASONS HOTEL",
+      "hotelId": "FSLAX713",
+      "geoCode": {
+        "latitude": 34.0671,
+        "longitude": -118.4002
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-03-28T08:22:16"
+    },
+    {
+      "chainCode": "GI",
+      "iataCode": "LAX",
+      "dupeId": 700008314,
+      "name": "HILTON GARDEN INN HOLLYWOOD",
+      "hotelId": "GILAX323",
+      "geoCode": {
+        "latitude": 34.10661,
+        "longitude": -118.33795
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:26"
+    },
+    {
+      "chainCode": "GI",
+      "iataCode": "LAX",
+      "dupeId": 700009839,
+      "name": "HGI LOS ANGELES MARINA DEL REY",
+      "hotelId": "GILAX420",
+      "geoCode": {
+        "latitude": 33.98523,
+        "longitude": -118.45518
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:29:02"
+    },
+    {
+      "chainCode": "GI",
+      "iataCode": "LAX",
+      "dupeId": 700036904,
+      "name": "HILTON GARDEN INN MONTEBELLO",
+      "hotelId": "GILAX265",
+      "geoCode": {
+        "latitude": 34.02758,
+        "longitude": -118.13206
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "GI",
+      "iataCode": "LAX",
+      "dupeId": 501401841,
+      "name": "HLTN GRDN INN LAX REDONDO BCH",
+      "hotelId": "GILAX663",
+      "geoCode": {
+        "latitude": 33.89372,
+        "longitude": -118.36661
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:05:54"
+    },
+    {
+      "chainCode": "GQ",
+      "iataCode": "LAX",
+      "dupeId": 700100300,
+      "name": "SIRTAJ HOTEL BEVERLY HILLS",
+      "hotelId": "GQLAX074",
+      "geoCode": {
+        "latitude": 34.06644,
+        "longitude": -118.39768
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:26:41"
+    },
+    {
+      "chainCode": "GQ",
+      "iataCode": "LAX",
+      "dupeId": 700109957,
+      "name": "O HOTEL",
+      "hotelId": "GQLAXORC",
+      "geoCode": {
+        "latitude": 34.04702,
+        "longitude": -118.26088
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:01:48"
+    },
+    {
+      "chainCode": "GQ",
+      "iataCode": "LAX",
+      "dupeId": 700116607,
+      "name": "SHADE HOTEL",
+      "hotelId": "GQLAXSHA",
+      "geoCode": {
+        "latitude": 33.88588,
+        "longitude": -118.40788
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:12:01"
+    },
+    {
+      "chainCode": "GQ",
+      "iataCode": "LAX",
+      "dupeId": 700055591,
+      "name": "CADILLAC HOTEL",
+      "hotelId": "GQLAX298",
+      "geoCode": {
+        "latitude": 33.99394,
+        "longitude": -118.47959
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:11:45"
+    },
+    {
+      "chainCode": "GZ",
+      "iataCode": "LAX",
+      "dupeId": 700068622,
+      "name": "HOLLYWOOD HILLS HOTEL",
+      "hotelId": "GZLAX176",
+      "geoCode": {
+        "latitude": 34.10558,
+        "longitude": -118.34212
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:29:02"
+    },
+    {
+      "chainCode": "GZ",
+      "iataCode": "LAX",
+      "dupeId": 700193877,
+      "name": "HOLLYWOOD DREAM SUITES",
+      "hotelId": "GZLAXHDS",
+      "geoCode": {
+        "latitude": 34.08639,
+        "longitude": -118.31562
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-05-14T09:00:13"
+    },
+    {
+      "chainCode": "GZ",
+      "iataCode": "LAX",
+      "dupeId": 700104275,
+      "name": "SHELTER HOTEL LOS ANGELES",
+      "hotelId": "GZLAX457",
+      "geoCode": {
+        "latitude": 34.06557,
+        "longitude": -118.29957
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:13:19"
+    },
+    {
+      "chainCode": "HG",
+      "iataCode": "LAX",
+      "dupeId": 700107840,
+      "name": "HOMEWOOD STES AGOURA HILLS",
+      "hotelId": "HGLAX289",
+      "geoCode": {
+        "latitude": 34.14621,
+        "longitude": -118.75559
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "HH",
+      "iataCode": "LAX",
+      "dupeId": 700013280,
+      "name": "THE BEVERLY HILTON",
+      "hotelId": "HHLAX737",
+      "geoCode": {
+        "latitude": 34.06696,
+        "longitude": -118.41232
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "HH",
+      "iataCode": "LAX",
+      "dupeId": 700035781,
+      "name": "HILTON LOS ANGELES CHECKERS",
+      "hotelId": "HHLAX269",
+      "geoCode": {
+        "latitude": 34.04981,
+        "longitude": -118.25462
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:35"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "LAX",
+      "dupeId": 700024204,
+      "name": "HOLIDAY INN BUENA PRK CNF CTR",
+      "hotelId": "HILAX3D2",
+      "geoCode": {
+        "latitude": 33.85815,
+        "longitude": -117.99725
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:42"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "LAX",
+      "dupeId": 700153133,
+      "name": "HOLIDAY INN EXP STES FRAZIER P",
+      "hotelId": "HILAX608",
+      "geoCode": {
+        "latitude": 34.81906,
+        "longitude": -118.88291
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:06:16"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "LAX",
+      "dupeId": 700029327,
+      "name": "HOLIDAY INN AIRPORT",
+      "hotelId": "HILAX691",
+      "geoCode": {
+        "latitude": 33.80422,
+        "longitude": -118.14253
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:39"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "LAX",
+      "dupeId": 700067792,
+      "name": "HOLIDAY INN EXP CENTURY CITY",
+      "hotelId": "HILAX4E8",
+      "geoCode": {
+        "latitude": 34.05172,
+        "longitude": -118.4176
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "LAX",
+      "dupeId": 700114957,
+      "name": "HOLIDAY INN EXP DOWNTOWN WEST",
+      "hotelId": "HILAXE1C",
+      "geoCode": {
+        "latitude": 34.0587,
+        "longitude": -118.27422
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:20:07"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "LAX",
+      "dupeId": 700008443,
+      "name": "HOLIDAY INN EXP LAX AIRPORT",
+      "hotelId": "HILAXDFF",
+      "geoCode": {
+        "latitude": 33.95911,
+        "longitude": -118.38487
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:14:06"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "LAX",
+      "dupeId": 700068216,
+      "name": "HOLIDAY INN EXPRESS VAN NUYS",
+      "hotelId": "HILAXBD1",
+      "geoCode": {
+        "latitude": 34.2201,
+        "longitude": -118.47187
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "LAX",
+      "dupeId": 700149751,
+      "name": "HOLIDAY INN EXP STES WOODLAND",
+      "hotelId": "HILAXD83",
+      "geoCode": {
+        "latitude": 34.16731,
+        "longitude": -118.61914
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:10"
+    },
+    {
+      "chainCode": "HJ",
+      "iataCode": "LAX",
+      "dupeId": 700108144,
+      "name": "HOWARD JOHNSON PICO RIVERA",
+      "hotelId": "HJLAX697",
+      "geoCode": {
+        "latitude": 33.99825,
+        "longitude": -118.07545
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:07:49"
+    },
+    {
+      "chainCode": "HX",
+      "iataCode": "LAX",
+      "dupeId": 700066719,
+      "name": "HAMPTON INN STES AGOURA HILLS",
+      "hotelId": "HXLAX302",
+      "geoCode": {
+        "latitude": 34.14486,
+        "longitude": -118.78004
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "HX",
+      "iataCode": "LAX",
+      "dupeId": 700036440,
+      "name": "HAMPTON INN LOS ANGELES CARSON",
+      "hotelId": "HXLAXFA6",
+      "geoCode": {
+        "latitude": 34.37721,
+        "longitude": -118.56603
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:42"
+    },
+    {
+      "chainCode": "HX",
+      "iataCode": "LAX",
+      "dupeId": 700035660,
+      "name": "HAMPTON INN STES HERMOSA BEACH",
+      "hotelId": "HXLAX153",
+      "geoCode": {
+        "latitude": 34.62332,
+        "longitude": -98.42741
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:51"
+    },
+    {
+      "chainCode": "HX",
+      "iataCode": "LAX",
+      "dupeId": 700216713,
+      "name": "HAMPTON INN LAX HAWTHORNE",
+      "hotelId": "HXLAX903",
+      "geoCode": {
+        "latitude": 33.93063,
+        "longitude": -118.35105
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:07:10"
+    },
+    {
+      "chainCode": "HX",
+      "iataCode": "LAX",
+      "dupeId": 700036068,
+      "name": "HAMPTON INN SANTA CLARITA",
+      "hotelId": "HXLAXDC3",
+      "geoCode": {
+        "latitude": 34.37721,
+        "longitude": -118.56603
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:42"
+    },
+    {
+      "chainCode": "HY",
+      "iataCode": "LAX",
+      "dupeId": 700020037,
+      "name": "HYATT HOUSE LAX EL SEGUNDO",
+      "hotelId": "HYLAXELS",
+      "geoCode": {
+        "latitude": 33.90384,
+        "longitude": -118.38229
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-02-27T09:35:13"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700151530,
+      "name": "PORTOLA INN AND SUI",
+      "hotelId": "ILLAX222",
+      "geoCode": {
+        "latitude": 33.85961,
+        "longitude": -117.99462
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:13:19"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700151566,
+      "name": "STUDIO INN AND SUIT",
+      "hotelId": "ILLAX555",
+      "geoCode": {
+        "latitude": 33.92123,
+        "longitude": -118.13459
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:13:19"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700148369,
+      "name": "AMERICAN INN AT DOW",
+      "hotelId": "ILLAX999",
+      "geoCode": {
+        "latitude": 33.91605,
+        "longitude": -118.138
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:14:06"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700104977,
+      "name": "DYNASTY INN-GARDENA",
+      "hotelId": "ILLAX888",
+      "geoCode": {
+        "latitude": 33.96226,
+        "longitude": -118.11152
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:56:50"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700176133,
+      "name": "GRANDVIEW INN",
+      "hotelId": "ILLAX055",
+      "geoCode": {
+        "latitude": 34.05151,
+        "longitude": -118.26223
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:19:52"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700154534,
+      "name": "HOLLYWOOD PALMS INN",
+      "hotelId": "ILLAX554",
+      "geoCode": {
+        "latitude": 34.09852,
+        "longitude": -118.32072
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:15:41"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700107639,
+      "name": "HOLLYWOOD GUEST INN",
+      "hotelId": "ILLAX575",
+      "geoCode": {
+        "latitude": 34.098,
+        "longitude": -118.33693
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700164087,
+      "name": "TENTEN WILSHIRE",
+      "hotelId": "ILLAX010",
+      "geoCode": {
+        "latitude": 34.05151,
+        "longitude": -118.26223
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:16:43"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700155252,
+      "name": "ROSE BOWL MOTEL",
+      "hotelId": "ILLAX551",
+      "geoCode": {
+        "latitude": 33.98846,
+        "longitude": -118.47485
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:58:08"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700107642,
+      "name": "HOLLYWOOD STARS INN",
+      "hotelId": "ILLAX335",
+      "geoCode": {
+        "latitude": 34.09841,
+        "longitude": -118.30833
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:11:30"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700129887,
+      "name": "BEVERLY INN",
+      "hotelId": "ILLAX567",
+      "geoCode": {
+        "latitude": 34.07643,
+        "longitude": -118.35765
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:05:45"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700151435,
+      "name": "FLORAL INN",
+      "hotelId": "ILLAX156",
+      "geoCode": {
+        "latitude": 34.4318,
+        "longitude": -119.28063
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:19:05"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700066709,
+      "name": "GUESTHOUSE INN AND SU",
+      "hotelId": "ILLAX874",
+      "geoCode": {
+        "latitude": 33.96226,
+        "longitude": -118.11152
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:36"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700108368,
+      "name": "INN AT PLAYA DEL REY",
+      "hotelId": "ILLAX448",
+      "geoCode": {
+        "latitude": 34.09841,
+        "longitude": -118.30833
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:39"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700116565,
+      "name": "SEASIDE MOTEL",
+      "hotelId": "ILLAX998",
+      "geoCode": {
+        "latitude": 33.8729,
+        "longitude": -118.37887
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:39"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700066713,
+      "name": "GUESTHOUSE INN AND SU",
+      "hotelId": "ILLAX257",
+      "geoCode": {
+        "latitude": 33.95035,
+        "longitude": -118.16535
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:42"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700217812,
+      "name": "TOPANGA CANYON INN",
+      "hotelId": "ILLAXTOP",
+      "geoCode": {
+        "latitude": 33.91605,
+        "longitude": -118.138
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:58:08"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700114077,
+      "name": "VENICE BEACH SUITES",
+      "hotelId": "ILLAX478",
+      "geoCode": {
+        "latitude": 33.98846,
+        "longitude": -118.47485
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700109208,
+      "name": "LAMBERT INN",
+      "hotelId": "ILLAX348",
+      "geoCode": {
+        "latitude": 34.09841,
+        "longitude": -118.30833
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:28:00"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700155239,
+      "name": "ELDORADO INN AND SU",
+      "hotelId": "ILLAX203",
+      "geoCode": {
+        "latitude": 33.79,
+        "longitude": -118.31567
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:42:57"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "LAX",
+      "dupeId": 700105244,
+      "name": "EMERALD IGUANA INN",
+      "hotelId": "ILLAX144",
+      "geoCode": {
+        "latitude": 34.4318,
+        "longitude": -119.28063
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:36"
+    },
+    {
+      "chainCode": "KC",
+      "iataCode": "LAX",
+      "dupeId": 700155248,
+      "name": "HTL WILSHIRE KIMPTON",
+      "hotelId": "KCLAXWIL",
+      "geoCode": {
+        "latitude": 34.06389,
+        "longitude": -118.36597
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:11:14"
+    },
+    {
+      "chainCode": "KC",
+      "iataCode": "LAX",
+      "dupeId": 700005589,
+      "name": "PALOMAR LA  KIMPTON HTL",
+      "hotelId": "KCLAX711",
+      "geoCode": {
+        "latitude": 34.06004,
+        "longitude": -118.4374
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:09:56"
+    },
+    {
+      "chainCode": "KG",
+      "iataCode": "LAX",
+      "dupeId": 700114405,
+      "name": "KNIGHTS INN PICO RIVERA",
+      "hotelId": "KGLAX021",
+      "geoCode": {
+        "latitude": 33.98579,
+        "longitude": -118.09401
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:13:35"
+    },
+    {
+      "chainCode": "KG",
+      "iataCode": "LAX",
+      "dupeId": 700157325,
+      "name": "KNIGHTS INN WOODLAND HILLS",
+      "hotelId": "KGLAX013",
+      "geoCode": {
+        "latitude": 34.16796,
+        "longitude": -118.60095
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:19:52"
+    },
+    {
+      "chainCode": "KG",
+      "iataCode": "LAX",
+      "dupeId": 700118857,
+      "name": "KNIGHTS INN LOSANGELES CENTRAL",
+      "hotelId": "KGLAX484",
+      "geoCode": {
+        "latitude": 34.06607,
+        "longitude": -118.25399
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:20"
+    },
+    {
+      "chainCode": "LE",
+      "iataCode": "LAX",
+      "dupeId": 700017140,
+      "name": "LUXE RODEO DRIVE HOTEL -BEVERLY HILLS",
+      "hotelId": "LELAX502",
+      "geoCode": {
+        "latitude": 34.06895,
+        "longitude": -118.40242
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:52"
+    },
+    {
+      "chainCode": "LE",
+      "iataCode": "LAX",
+      "dupeId": 700028009,
+      "name": "LUXE CITY CENTER HOTEL",
+      "hotelId": "LELAX299",
+      "geoCode": {
+        "latitude": 34.0443,
+        "longitude": -118.26412
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:16:28"
+    },
+    {
+      "chainCode": "LE",
+      "iataCode": "LAX",
+      "dupeId": 700009638,
+      "name": "LUXE SUNSET BOULEVARD HOTEL -BELAIR",
+      "hotelId": "LELAXBEL",
+      "geoCode": {
+        "latitude": 34.07209,
+        "longitude": -118.46794
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:39"
+    },
+    {
+      "chainCode": "LE",
+      "iataCode": "LAX",
+      "dupeId": 700066536,
+      "name": "ELAN HOTEL",
+      "hotelId": "LELAXELA",
+      "geoCode": {
+        "latitude": 34.07633,
+        "longitude": -118.3746
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:08:21"
+    },
+    {
+      "chainCode": "LM",
+      "iataCode": "LAX",
+      "dupeId": 700119192,
+      "name": "HOLLYWOOD BEST INN",
+      "hotelId": "LMLAX625",
+      "geoCode": {
+        "latitude": 34.10422,
+        "longitude": -118.32991
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:39"
+    },
+    {
+      "chainCode": "LM",
+      "iataCode": "LAX",
+      "dupeId": 700068621,
+      "name": "HOLLYWOOD DOWNTOWNER",
+      "hotelId": "LMLAX757",
+      "geoCode": {
+        "latitude": 34.10173,
+        "longitude": -118.31187
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:55"
+    },
+    {
+      "chainCode": "LO",
+      "iataCode": "LAX",
+      "dupeId": 700011883,
+      "name": "THE LANGHAM PASADENA",
+      "hotelId": "LOLAXHUN",
+      "geoCode": {
+        "latitude": 34.12169,
+        "longitude": -118.13273
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:11:30"
+    },
+    {
+      "chainCode": "LQ",
+      "iataCode": "LAX",
+      "dupeId": 700192104,
+      "name": "LA QUINTA INN STE INGLEWOOD",
+      "hotelId": "LQLAX015",
+      "geoCode": {
+        "latitude": 33.93127,
+        "longitude": -118.34328
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-03-28T08:42:14"
+    },
+    {
+      "chainCode": "LQ",
+      "iataCode": "LAX",
+      "dupeId": 700040391,
+      "name": "LA QUINTA INN STE LAX",
+      "hotelId": "LQLAXCZD",
+      "geoCode": {
+        "latitude": 33.94536,
+        "longitude": -118.37165
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:39"
+    },
+    {
+      "chainCode": "LQ",
+      "iataCode": "LAX",
+      "dupeId": 700068567,
+      "name": "LA QUINTA INN STE NEWBURY PARK",
+      "hotelId": "LQLAXDAP",
+      "geoCode": {
+        "latitude": 34.18157,
+        "longitude": -118.90139
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:52"
+    },
+    {
+      "chainCode": "LW",
+      "iataCode": "LAX",
+      "dupeId": 700011747,
+      "name": "MR C BEVERLY HILLS HOTEL",
+      "hotelId": "LWLAX750",
+      "geoCode": {
+        "latitude": 34.05559,
+        "longitude": -118.39874
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:52"
+    },
+    {
+      "chainCode": "LZ",
+      "iataCode": "LAX",
+      "dupeId": 700009539,
+      "name": "LOEWS SANTA MONICA BEACH HOTEL",
+      "hotelId": "LZLAXLSL",
+      "geoCode": {
+        "latitude": 34.00988,
+        "longitude": -118.49309
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-12-11T10:10:45"
+    },
+    {
+      "chainCode": "MC",
+      "iataCode": "LAX",
+      "dupeId": 700004201,
+      "name": "LOS ANGELES AIRPORT MARRIOTT",
+      "hotelId": "MCLAXAPM",
+      "geoCode": {
+        "latitude": 33.94554,
+        "longitude": -118.38488
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-04-28T06:06:28"
+    },
+    {
+      "chainCode": "MC",
+      "iataCode": "LAX",
+      "dupeId": 700128179,
+      "name": "JW MARRIOTT HOTEL LOS ANGELES",
+      "hotelId": "MCLAXJWM",
+      "geoCode": {
+        "latitude": 34.04544,
+        "longitude": -118.26576
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-04-28T06:05:47"
+    },
+    {
+      "chainCode": "MC",
+      "iataCode": "LAX",
+      "dupeId": 700009740,
+      "name": "MANHATTAN BEACH MARRIOTT",
+      "hotelId": "MCLAXMNM",
+      "geoCode": {
+        "latitude": 33.90123,
+        "longitude": -118.39107
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:55"
+    },
+    {
+      "chainCode": "MC",
+      "iataCode": "LAX",
+      "dupeId": 700009832,
+      "name": "MARINA DEL REY MARRIOTT",
+      "hotelId": "MCLAXMBM",
+      "geoCode": {
+        "latitude": 33.98199,
+        "longitude": -118.45989
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-04-28T06:05:09"
+    },
+    {
+      "chainCode": "MC",
+      "iataCode": "LAX",
+      "dupeId": 700019460,
+      "name": "NEWPORT BCH MARRIOTT HOTEL SPA",
+      "hotelId": "MCLAXNBM",
+      "geoCode": {
+        "latitude": 33.6171,
+        "longitude": -117.8787
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:05:30"
+    },
+    {
+      "chainCode": "MC",
+      "iataCode": "LAX",
+      "dupeId": 700069044,
+      "name": "TORRANCE MARRIOTT SOUTH BAY",
+      "hotelId": "MCLAXTRM",
+      "geoCode": {
+        "latitude": 33.83522,
+        "longitude": -118.35054
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:02:58"
+    },
+    {
+      "chainCode": "MC",
+      "iataCode": "LAX",
+      "dupeId": 700069053,
+      "name": "WARNER CENTER MARRIOTT",
+      "hotelId": "MCLAXWCM",
+      "geoCode": {
+        "latitude": 34.17895,
+        "longitude": -118.6036
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:12:24"
+    },
+    {
+      "chainCode": "MN",
+      "iataCode": "LAX",
+      "dupeId": 700109765,
+      "name": "MONTAGE BEVERLY HILLS",
+      "hotelId": "MNLAXMBH",
+      "geoCode": {
+        "latitude": 34.06776,
+        "longitude": -118.39892
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:16:44"
+    },
+    {
+      "chainCode": "MR",
+      "iataCode": "LAX",
+      "dupeId": 700010287,
+      "name": "MONDRIAN A MORGANS HOTEL",
+      "hotelId": "MRLAXMON",
+      "geoCode": {
+        "latitude": 34.09485,
+        "longitude": -118.37422
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:52"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700101286,
+      "name": "ANAHEIM HACIENDA INN AND SUITES- DISNEY",
+      "hotelId": "MSLAX415",
+      "geoCode": {
+        "latitude": 33.91942,
+        "longitude": -118.20913
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:48:59"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700154383,
+      "name": "EL DORADO MOTEL GARDENA",
+      "hotelId": "MSLAX475",
+      "geoCode": {
+        "latitude": 33.91942,
+        "longitude": -118.20913
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:13:51"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700116547,
+      "name": "SEA ROCK INN LOS ANGELES",
+      "hotelId": "MSLAX876",
+      "geoCode": {
+        "latitude": 33.90399,
+        "longitude": -118.29111
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:48:28"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700155247,
+      "name": "REGENCY INN LOS ANGELES",
+      "hotelId": "MSLAX847",
+      "geoCode": {
+        "latitude": 34.13959,
+        "longitude": -118.21856
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:19:05"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700156716,
+      "name": "WILSHIRE CREST HOTEL LOS ANGELES",
+      "hotelId": "MSLAX854",
+      "geoCode": {
+        "latitude": 34.13959,
+        "longitude": -118.21856
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:19:37"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700102918,
+      "name": "ANGELS MOTEL-PICO RIVERA",
+      "hotelId": "MSLAX948",
+      "geoCode": {
+        "latitude": 33.98534,
+        "longitude": -118.09596
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:59:43"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700155694,
+      "name": "MOONLITE INN REDONDO BEACH",
+      "hotelId": "MSLAX589",
+      "geoCode": {
+        "latitude": 33.93521,
+        "longitude": -118.34444
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:17:15"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700069537,
+      "name": "REDONDO INN  SUITES REDONDO BEACH",
+      "hotelId": "MSLAX260",
+      "geoCode": {
+        "latitude": 33.83008,
+        "longitude": -118.38557
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:14:38"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 700155693,
+      "name": "PACIFIC COAST INN REDONDO BEACH",
+      "hotelId": "MSLAXSTM",
+      "geoCode": {
+        "latitude": 33.98534,
+        "longitude": -118.09596
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:19:37"
+    },
+    {
+      "chainCode": "MS",
+      "iataCode": "LAX",
+      "dupeId": 501203894,
+      "name": "GARDEN INN SAN GABRIEL",
+      "hotelId": "MSLAX757",
+      "geoCode": {
+        "latitude": 33.93521,
+        "longitude": -118.34444
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:39:01"
+    },
+    {
+      "chainCode": "MU",
+      "iataCode": "LAX",
+      "dupeId": 700018405,
+      "name": "MILLENNIUM BILTMORE HOTEL LAX",
+      "hotelId": "MULAXRHB",
+      "geoCode": {
+        "latitude": 34.05003,
+        "longitude": -118.25402
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:40"
+    },
+    {
+      "chainCode": "MX",
+      "iataCode": "LAX",
+      "dupeId": 700120054,
+      "name": "MOTEL 6 LOS ANGELES-BELLFLOWER",
+      "hotelId": "MXLAXA42",
+      "geoCode": {
+        "latitude": 33.87621,
+        "longitude": -118.15049
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-02-27T09:34:10"
+    },
+    {
+      "chainCode": "MX",
+      "iataCode": "LAX",
+      "dupeId": 700045640,
+      "name": "MOTEL 6 CARSON",
+      "hotelId": "MXLAXH56",
+      "geoCode": {
+        "latitude": 33.83992,
+        "longitude": -118.26054
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:56:51"
+    },
+    {
+      "chainCode": "NZ",
+      "iataCode": "LAX",
+      "dupeId": 700068327,
+      "name": "THE HILLS HOTEL-LAGUNA HILLS",
+      "hotelId": "NZLAXD23",
+      "geoCode": {
+        "latitude": 33.59651,
+        "longitude": -117.6785
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:17:15"
+    },
+    {
+      "chainCode": "OM",
+      "iataCode": "LAX",
+      "dupeId": 700022805,
+      "name": "OMNI LA AT CALIFORNIA PLAZA",
+      "hotelId": "OMLAXCTR",
+      "geoCode": {
+        "latitude": 34.05278,
+        "longitude": -118.25056
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:55"
+    },
+    {
+      "chainCode": "OZ",
+      "iataCode": "LAX",
+      "dupeId": 700111283,
+      "name": "SUPER 8 COMMERCE-LA  AREA",
+      "hotelId": "OZLAX390",
+      "geoCode": {
+        "latitude": 33.9735,
+        "longitude": -118.12276
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:55"
+    },
+    {
+      "chainCode": "PH",
+      "iataCode": "LAX",
+      "dupeId": 700112525,
+      "name": "THE MOSAIC HOTEL BEVERLY HILLS",
+      "hotelId": "PHLAXTMH",
+      "geoCode": {
+        "latitude": 34.06611,
+        "longitude": -118.40918
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:59:43"
+    },
+    {
+      "chainCode": "PN",
+      "iataCode": "LAX",
+      "dupeId": 700013451,
+      "name": "THE PENINSULA BEVERLY HILLS",
+      "hotelId": "PNLAX795",
+      "geoCode": {
+        "latitude": 34.06582,
+        "longitude": -118.41121
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:11"
+    },
+    {
+      "chainCode": "PW",
+      "iataCode": "LAX",
+      "dupeId": 700010820,
+      "name": "THE PALOS VEERDES INN-REDONDO BEACH",
+      "hotelId": "PWLAX002",
+      "geoCode": {
+        "latitude": 33.81865,
+        "longitude": -118.38221
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:31:25"
+    },
+    {
+      "chainCode": "QI",
+      "iataCode": "LAX",
+      "dupeId": 700048959,
+      "name": "QUALITY INN AND SUITES ARTESIA - CERRITO",
+      "hotelId": "QILAX835",
+      "geoCode": {
+        "latitude": 33.87766,
+        "longitude": -118.08266
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:27"
+    },
+    {
+      "chainCode": "QI",
+      "iataCode": "LAX",
+      "dupeId": 700017973,
+      "name": "QUALITY INN AND SUITES",
+      "hotelId": "QILAX041",
+      "geoCode": {
+        "latitude": 33.86316,
+        "longitude": -118.39146
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:40"
+    },
+    {
+      "chainCode": "QI",
+      "iataCode": "LAX",
+      "dupeId": 700029041,
+      "name": "QUALITY INN NEAR HOLLYWOOD WALK OF FAME",
+      "hotelId": "QILAXB20",
+      "geoCode": {
+        "latitude": 34.09859,
+        "longitude": -118.34432
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:07:34"
+    },
+    {
+      "chainCode": "QI",
+      "iataCode": "LAX",
+      "dupeId": 700067480,
+      "name": "QUALITY INN AND SUITES BY CONVENTION CEN",
+      "hotelId": "QILAXD12",
+      "geoCode": {
+        "latitude": 34.07595,
+        "longitude": -118.28513
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:21"
+    },
+    {
+      "chainCode": "QI",
+      "iataCode": "LAX",
+      "dupeId": 700151434,
+      "name": "QUALITY INN NEAR CITY OF HOPE",
+      "hotelId": "QILAX337",
+      "geoCode": {
+        "latitude": 33.86316,
+        "longitude": -118.39146
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:00:46"
+    },
+    {
+      "chainCode": "QI",
+      "iataCode": "LAX",
+      "dupeId": 700048034,
+      "name": "QUALITY INN AND SUITES MONTEBELLO",
+      "hotelId": "QILAXB57",
+      "geoCode": {
+        "latitude": 33.97706,
+        "longitude": -118.12455
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:12:49"
+    },
+    {
+      "chainCode": "RA",
+      "iataCode": "LAX",
+      "dupeId": 700114812,
+      "name": "RAMADA COMMERCE LOS ANGELES",
+      "hotelId": "RALAX575",
+      "geoCode": {
+        "latitude": 33.97452,
+        "longitude": -118.12727
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:55"
+    },
+    {
+      "chainCode": "RA",
+      "iataCode": "LAX",
+      "dupeId": 700115043,
+      "name": "RAMADA PLAZA HAWTHORNE LAX",
+      "hotelId": "RALAX021",
+      "geoCode": {
+        "latitude": 33.9164,
+        "longitude": -118.37232
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:52"
+    },
+    {
+      "chainCode": "RA",
+      "iataCode": "LAX",
+      "dupeId": 700115104,
+      "name": "RAMADA LOS ANGELES WILSHIRE",
+      "hotelId": "RALAX177",
+      "geoCode": {
+        "latitude": 34.06186,
+        "longitude": -118.31269
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:11"
+    },
+    {
+      "chainCode": "RA",
+      "iataCode": "LAX",
+      "dupeId": 700047855,
+      "name": "RAMADA PLAZA WEST HOLLYWOOD",
+      "hotelId": "RALAX320",
+      "geoCode": {
+        "latitude": 34.08876,
+        "longitude": -118.37862
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:27"
+    },
+    {
+      "chainCode": "RA",
+      "iataCode": "LAX",
+      "dupeId": 700048730,
+      "name": "RAMADA REDONDO BEACH",
+      "hotelId": "RALAX242",
+      "geoCode": {
+        "latitude": 33.83531,
+        "longitude": -118.38556
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:52"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 700115572,
+      "name": "RESIDENCE INN YORBA L MARRIOTT",
+      "hotelId": "RCLAXALR",
+      "geoCode": {
+        "latitude": 33.86751,
+        "longitude": -117.7522
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:05:52"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 700151572,
+      "name": "RESIDENCE INN EL SEGU MARRIOTT",
+      "hotelId": "RCLAXELR",
+      "geoCode": {
+        "latitude": 33.91653,
+        "longitude": -118.38947
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-07-15T06:01:18"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 700115807,
+      "name": "RESIDENCE INN MIRADA MARRIOTT",
+      "hotelId": "RCLAXLMR",
+      "geoCode": {
+        "latitude": 33.88299,
+        "longitude": -118.02399
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:07:51"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 700043258,
+      "name": "RESIDENCE INN BEVERLY MARRIOTT",
+      "hotelId": "RCLAXRBR",
+      "geoCode": {
+        "latitude": 34.05568,
+        "longitude": -118.39601
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:11:54"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 501911562,
+      "name": "RESIDENCE INN LAX MARRIOTT",
+      "hotelId": "RCLAXAXR",
+      "geoCode": {
+        "latitude": 33.94612,
+        "longitude": -118.38732
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:01:44"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 501413637,
+      "name": "RESIDENCE INN LA LIV MARRIOTT",
+      "hotelId": "RCLAXRIR",
+      "geoCode": {
+        "latitude": 34.04576,
+        "longitude": -118.26591
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-05-27T06:01:42"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 700011786,
+      "name": "RESIDENCE INN MANHATT MARRIOTT",
+      "hotelId": "RCLAXMHR",
+      "geoCode": {
+        "latitude": 33.89069,
+        "longitude": -118.39473
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:11:53"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 700115573,
+      "name": "RESIDENCE INN PLACENT MARRIOTT",
+      "hotelId": "RCLAXPLR",
+      "geoCode": {
+        "latitude": 33.86293,
+        "longitude": -117.87941
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:12:25"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 501377412,
+      "name": "RESIDENCE INN REDONDO MARRIOTT",
+      "hotelId": "RCLAXDBR",
+      "geoCode": {
+        "latitude": 33.89467,
+        "longitude": -118.36964
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:10:25"
+    },
+    {
+      "chainCode": "RC",
+      "iataCode": "LAX",
+      "dupeId": 700115819,
+      "name": "RESIDENCE INN WESTLAK MARRIOTT",
+      "hotelId": "RCLAXWVR",
+      "geoCode": {
+        "latitude": 34.15068,
+        "longitude": -118.80138
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:09:03"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700116113,
+      "name": "RODEWAY INN ARTESIA",
+      "hotelId": "RYLAXB67",
+      "geoCode": {
+        "latitude": 33.87243,
+        "longitude": -118.08028
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:05:30"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700116115,
+      "name": "RODEWAY INN AZUSA",
+      "hotelId": "RYLAXA32",
+      "geoCode": {
+        "latitude": 34.1216,
+        "longitude": -117.90672
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:08:37"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700116186,
+      "name": "RODEWAY INN MAGIC MOUNTAIN AREA",
+      "hotelId": "RYLAX480",
+      "geoCode": {
+        "latitude": 34.49234,
+        "longitude": -118.61902
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:27"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700062906,
+      "name": "RODEWAY INN NEAR HOME DEPOT CENTER",
+      "hotelId": "RYLAXB72",
+      "geoCode": {
+        "latitude": 33.88922,
+        "longitude": -118.29935
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:10:43"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700069651,
+      "name": "RODEWAY INN REGALODGE",
+      "hotelId": "RYLAX220",
+      "geoCode": {
+        "latitude": 34.14235,
+        "longitude": -118.25773
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:27"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700116199,
+      "name": "RODEWAY INN NEAR LA LIVE",
+      "hotelId": "RYLAXB12",
+      "geoCode": {
+        "latitude": 33.98232,
+        "longitude": -118.22987
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:10:12"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700069573,
+      "name": "RODEWAY INN AND SUITES INGLEWOOD",
+      "hotelId": "RYLAX911",
+      "geoCode": {
+        "latitude": 33.94506,
+        "longitude": -118.34258
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:43"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700066232,
+      "name": "RODEWAY INN NEAR VENICE BEACH",
+      "hotelId": "RYLAX323",
+      "geoCode": {
+        "latitude": 33.99806,
+        "longitude": -118.42092
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:14:54"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700066705,
+      "name": "RODEWAY INN CONVENTION CENTER",
+      "hotelId": "RYLAXB11",
+      "geoCode": {
+        "latitude": 34.05068,
+        "longitude": -118.27801
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:08:22"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700066690,
+      "name": "RODEWAY INN LOS ANGELES",
+      "hotelId": "RYLAXA95",
+      "geoCode": {
+        "latitude": 34.07609,
+        "longitude": -118.35814
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:08:53"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700116202,
+      "name": "RODEWAY INN AT CIVIC CENTER",
+      "hotelId": "RYLAXA49",
+      "geoCode": {
+        "latitude": 33.91661,
+        "longitude": -118.08282
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:52"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700116083,
+      "name": "RODEWAY INN AND SUITES",
+      "hotelId": "RYLAXA91",
+      "geoCode": {
+        "latitude": 34.0689,
+        "longitude": -118.0996
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:07:50"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700193380,
+      "name": "RODEWAY INN SOUTH GATE",
+      "hotelId": "RYLAXD49",
+      "geoCode": {
+        "latitude": 33.95103,
+        "longitude": -118.18318
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:27:14"
+    },
+    {
+      "chainCode": "RY",
+      "iataCode": "LAX",
+      "dupeId": 700116224,
+      "name": "RODEWAY INN SIGNAL HILL",
+      "hotelId": "RYLAXB15",
+      "geoCode": {
+        "latitude": 33.82147,
+        "longitude": -118.19405
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:09:56"
+    },
+    {
+      "chainCode": "RZ",
+      "iataCode": "LAX",
+      "dupeId": 700148046,
+      "name": "THE RITZ-CARLTON LOS ANGELES",
+      "hotelId": "RZLAXLZZ",
+      "geoCode": {
+        "latitude": 34.04544,
+        "longitude": -118.26576
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-05-12T06:01:09"
+    },
+    {
+      "chainCode": "RZ",
+      "iataCode": "LAX",
+      "dupeId": 700011885,
+      "name": "THE RITZ-CARLTON MARINA DEL RY",
+      "hotelId": "RZLAXMAR",
+      "geoCode": {
+        "latitude": 33.98498,
+        "longitude": -118.4515
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:40"
+    },
+    {
+      "chainCode": "SC",
+      "iataCode": "LAX",
+      "dupeId": 700045593,
+      "name": "HOTEL SOLAIRE",
+      "hotelId": "SCLAX625",
+      "geoCode": {
+        "latitude": 34.05419,
+        "longitude": -118.2729
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:24:52"
+    },
+    {
+      "chainCode": "SC",
+      "iataCode": "LAX",
+      "dupeId": 700178868,
+      "name": "THE MALIBU MOTEL",
+      "hotelId": "SCLAXTMM",
+      "geoCode": {
+        "latitude": 34.04023,
+        "longitude": -118.66612
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:50:50"
+    },
+    {
+      "chainCode": "SI",
+      "iataCode": "LAX",
+      "dupeId": 700034519,
+      "name": "SHERATON AGOURA HILLS HOTEL",
+      "hotelId": "SILAX674",
+      "geoCode": {
+        "latitude": 34.14414,
+        "longitude": -118.77904
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:07:32"
+    },
+    {
+      "chainCode": "SI",
+      "iataCode": "LAX",
+      "dupeId": 502030513,
+      "name": "HILTON HOTELS LONDON KENSINGTON",
+      "hotelId": "SILAXHCP",
+      "geoCode": {
+        "latitude": 34.05348,
+        "longitude": -118.24532
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:22:53"
+    },
+    {
+      "chainCode": "SI",
+      "iataCode": "LAX",
+      "dupeId": 700012601,
+      "name": "SHERATON GATEWAY LOS ANGELES",
+      "hotelId": "SILAX344",
+      "geoCode": {
+        "latitude": 33.94553,
+        "longitude": -118.38652
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-09-30T06:08:53"
+    },
+    {
+      "chainCode": "SI",
+      "iataCode": "LAX",
+      "dupeId": 700022298,
+      "name": "SHERATON LOS ANGELES DOWNTOWN",
+      "hotelId": "SILAX598",
+      "geoCode": {
+        "latitude": 34.0478,
+        "longitude": -118.25778
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-09-30T06:00:25"
+    },
+    {
+      "chainCode": "SI",
+      "iataCode": "LAX",
+      "dupeId": 700007477,
+      "name": "HILTON HOTELS LONDON KENSINGTON",
+      "hotelId": "SILAXXEB",
+      "geoCode": {
+        "latitude": 33.94762,
+        "longitude": -118.38589
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:40"
+    },
+    {
+      "chainCode": "SK",
+      "iataCode": "LAX",
+      "dupeId": 700018406,
+      "name": "SIXTY BEVERLY HILLS",
+      "hotelId": "SKLAXBEV",
+      "geoCode": {
+        "latitude": 34.06669,
+        "longitude": -118.39617
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:07:32"
+    },
+    {
+      "chainCode": "TL",
+      "iataCode": "LAX",
+      "dupeId": 700064302,
+      "name": "TL INN AND SUITES GARDENA CA",
+      "hotelId": "TLLAX030",
+      "geoCode": {
+        "latitude": 33.86195,
+        "longitude": -118.29897
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:28:17"
+    },
+    {
+      "chainCode": "TL",
+      "iataCode": "LAX",
+      "dupeId": 700114031,
+      "name": "TRAVELODGE TORRANCE REDONDO BE",
+      "hotelId": "TLLAX878",
+      "geoCode": {
+        "latitude": 33.82081,
+        "longitude": -118.32693
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:08"
+    },
+    {
+      "chainCode": "TL",
+      "iataCode": "LAX",
+      "dupeId": 700051623,
+      "name": "TRAVELODGE HOLLYWOOD VERMONT",
+      "hotelId": "TLLAX060",
+      "geoCode": {
+        "latitude": 34.09705,
+        "longitude": -118.29175
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:12"
+    },
+    {
+      "chainCode": "TL",
+      "iataCode": "LAX",
+      "dupeId": 700109387,
+      "name": "LYNWOOD CENTURY FREEWAY TRAVEL",
+      "hotelId": "TLLAX091",
+      "geoCode": {
+        "latitude": 33.92698,
+        "longitude": -118.21062
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:12"
+    },
+    {
+      "chainCode": "TO",
+      "iataCode": "LAX",
+      "dupeId": 700080269,
+      "name": "TOWNEPLACE STES HAWTH MARRIOTT",
+      "hotelId": "TOLAXHTT",
+      "geoCode": {
+        "latitude": 33.90177,
+        "longitude": -118.37869
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:07:01"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 700066674,
+      "name": "GOOD NITE INN CALABASAS",
+      "hotelId": "UZLAX623",
+      "geoCode": {
+        "latitude": 34.14294,
+        "longitude": -118.70217
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:53"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 700066675,
+      "name": "GOOD NITE INN CAMARILLO",
+      "hotelId": "UZLAX626",
+      "geoCode": {
+        "latitude": 34.21743,
+        "longitude": -119.05526
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:27"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 501686666,
+      "name": "OAKWOOD AT HILLCRESTE",
+      "hotelId": "UZLAXOAH",
+      "geoCode": {
+        "latitude": 34.05308,
+        "longitude": -118.40388
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:13:16"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 700164088,
+      "name": "OAKWOOD AT PALAZZO EAST",
+      "hotelId": "UZLAX331",
+      "geoCode": {
+        "latitude": 34.06895,
+        "longitude": -118.34932
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:25:24"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 700164090,
+      "name": "OAKWOOD TOLUCA HILL",
+      "hotelId": "UZLAX002",
+      "geoCode": {
+        "latitude": 34.14016,
+        "longitude": -118.33889
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:25:39"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 501445104,
+      "name": "OAKWOOD AT WILSHIRE LA BREA",
+      "hotelId": "UZLAX147",
+      "geoCode": {
+        "latitude": 34.07042,
+        "longitude": -118.35049
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:09:09"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 700079406,
+      "name": "STAY ON MAIN",
+      "hotelId": "UZLAX618",
+      "geoCode": {
+        "latitude": 34.04475,
+        "longitude": -118.25046
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:17:16"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 700164092,
+      "name": "GARDEN SUITE HOTEL AND RESORT",
+      "hotelId": "UZLAX419",
+      "geoCode": {
+        "latitude": 34.06039,
+        "longitude": -118.30956
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:15:42"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 700164093,
+      "name": "OAKWOOD AT PLAYA DEL ORO",
+      "hotelId": "UZLAX601",
+      "geoCode": {
+        "latitude": 33.9596,
+        "longitude": -118.41911
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:25:08"
+    },
+    {
+      "chainCode": "UZ",
+      "iataCode": "LAX",
+      "dupeId": 700189582,
+      "name": "OAKWOOD AT 1010 WILSHIRE",
+      "hotelId": "UZLAXTEN",
+      "geoCode": {
+        "latitude": 34.05151,
+        "longitude": -118.26221
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:25:24"
+    },
+    {
+      "chainCode": "VC",
+      "iataCode": "LAX",
+      "dupeId": 700051949,
+      "name": "MARRIOTT VAC CLUB NEWPORT COAS",
+      "hotelId": "VCLAXNCV",
+      "geoCode": {
+        "latitude": 33.5844,
+        "longitude": -117.8439
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:09:32"
+    },
+    {
+      "chainCode": "WH",
+      "iataCode": "LAX",
+      "dupeId": 700140887,
+      "name": "W HOLLYWOOD",
+      "hotelId": "WHLAX789",
+      "geoCode": {
+        "latitude": 34.10132,
+        "longitude": -118.32549
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-04-28T06:09:12"
+    },
+    {
+      "chainCode": "WH",
+      "iataCode": "LAX",
+      "dupeId": 700016124,
+      "name": "W HOTEL LOS ANGELES WESTWOOD",
+      "hotelId": "WHLAXXDJ",
+      "geoCode": {
+        "latitude": 34.06345,
+        "longitude": -118.44123
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2025-04-21T06:11:00"
+    },
+    {
+      "chainCode": "WI",
+      "iataCode": "LAX",
+      "dupeId": 700014246,
+      "name": "THE WESTIN BONAVENTURE HOTEL AND SUITES",
+      "hotelId": "WILAXLAB",
+      "geoCode": {
+        "latitude": 34.05348,
+        "longitude": -118.25598
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-09-30T06:09:34"
+    },
+    {
+      "chainCode": "WI",
+      "iataCode": "LAX",
+      "dupeId": 700014253,
+      "name": "WESTIN LOS ANGELES AIRPORT",
+      "hotelId": "WILAXLAX",
+      "geoCode": {
+        "latitude": 33.94536,
+        "longitude": -118.37495
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-09-30T06:08:07"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700154384,
+      "name": "GARDENA TERRACE INN",
+      "hotelId": "WVLAX303",
+      "geoCode": {
+        "latitude": 33.88622,
+        "longitude": -118.30852
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:27:29"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700062360,
+      "name": "BEACH HOUSE AT HERMOSA",
+      "hotelId": "WVLAX651",
+      "geoCode": {
+        "latitude": 33.86266,
+        "longitude": -118.40199
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:56"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700051447,
+      "name": "BEVERLY HILLS PLAZA HOTEL",
+      "hotelId": "WVLAX107",
+      "geoCode": {
+        "latitude": 34.06738,
+        "longitude": -118.4258
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:59"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700008233,
+      "name": "HOTEL ANGELENO LOS ANGELES",
+      "hotelId": "WVLAX30D",
+      "geoCode": {
+        "latitude": 34.07409,
+        "longitude": -118.46842
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:24:53"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700011547,
+      "name": "THE LINE",
+      "hotelId": "WVLAX376",
+      "geoCode": {
+        "latitude": 34.06215,
+        "longitude": -118.30098
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:43:30"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700109358,
+      "name": "LOS ANGELES ATHLETIC CLUB",
+      "hotelId": "WVLAX684",
+      "geoCode": {
+        "latitude": 34.04618,
+        "longitude": -118.25494
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:53"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700113518,
+      "name": "THE CAPRI",
+      "hotelId": "WVLAX192",
+      "geoCode": {
+        "latitude": 34.44905,
+        "longitude": -119.23262
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:53"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700108238,
+      "name": "HUMMINGBIRD INN",
+      "hotelId": "WVLAX938",
+      "geoCode": {
+        "latitude": 34.44874,
+        "longitude": -119.23063
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:49:47"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700005329,
+      "name": "HOTEL ERWIN VENICE BEACH",
+      "hotelId": "WVLAX602",
+      "geoCode": {
+        "latitude": 33.98695,
+        "longitude": -118.47245
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:29:35"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "LAX",
+      "dupeId": 700070260,
+      "name": "WESTLAKE VILLAGE INN",
+      "hotelId": "WVLAXWVI",
+      "geoCode": {
+        "latitude": 34.14878,
+        "longitude": -118.81627
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:17:48"
+    },
+    {
+      "chainCode": "WW",
+      "iataCode": "LAX",
+      "dupeId": 700070154,
+      "name": "CRESCENT HOTEL BEVERLY HILLS",
+      "hotelId": "WWLAXCRE",
+      "geoCode": {
+        "latitude": 34.07121,
+        "longitude": -118.40032
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:55:49"
+    },
+    {
+      "chainCode": "WW",
+      "iataCode": "LAX",
+      "dupeId": 700157782,
+      "name": "SUNSET MARQUIS HOTEL",
+      "hotelId": "WWLAXSUN",
+      "geoCode": {
+        "latitude": 34.0922,
+        "longitude": -118.37734
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:22:14"
+    },
+    {
+      "chainCode": "WY",
+      "iataCode": "LAX",
+      "dupeId": 700031058,
+      "name": "WYNDHAM ANAHEIM GARDEN GROVE",
+      "hotelId": "WYLAX56C",
+      "geoCode": {
+        "latitude": 33.78835,
+        "longitude": -117.91621
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:08:58"
+    },
+    {
+      "chainCode": "XK",
+      "iataCode": "LAX",
+      "dupeId": 501911922,
+      "name": "SOPHIE US2",
+      "hotelId": "XKLAX000",
+      "geoCode": {
+        "latitude": 34.05348,
+        "longitude": -118.24532
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:59:59"
+    },
+    {
+      "chainCode": "XL",
+      "iataCode": "LAX",
+      "dupeId": 700048328,
+      "name": "PACIFIC PALMS RESORT SUMMIT",
+      "hotelId": "XLLAXPPR",
+      "geoCode": {
+        "latitude": 34.02071,
+        "longitude": -117.92708
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:12:18"
+    },
+    {
+      "chainCode": "XL",
+      "iataCode": "LAX",
+      "dupeId": 700070192,
+      "name": "THE ORLANDO SUMMIT HOTELS",
+      "hotelId": "XLLAXTOH",
+      "geoCode": {
+        "latitude": 34.07274,
+        "longitude": -118.37291
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:46:07"
+    },
+    {
+      "chainCode": "XO",
+      "iataCode": "LAX",
+      "dupeId": 700014321,
+      "name": "THE LONDON WEST HOLLYWOOD",
+      "hotelId": "XOLAX300",
+      "geoCode": {
+        "latitude": 34.0897,
+        "longitude": -118.38557
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:56"
+    },
+    {
+      "chainCode": "XV",
+      "iataCode": "LAX",
+      "dupeId": 700080272,
+      "name": "SPRINGHILL STES HAWTH MARRIOTT",
+      "hotelId": "XVLAXHWS",
+      "geoCode": {
+        "latitude": 33.89951,
+        "longitude": -118.3787
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2024-04-22T06:08:27"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700039327,
+      "name": "MAISON 140 BEVERLY HILLS",
+      "hotelId": "YXLAX006",
+      "geoCode": {
+        "latitude": 34.06564,
+        "longitude": -118.40966
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:08:07"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700035104,
+      "name": "LERMITAGE BEVERLY HILLS",
+      "hotelId": "YXLAXLER",
+      "geoCode": {
+        "latitude": 34.0726,
+        "longitude": -118.39543
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:16:45"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700102316,
+      "name": "HOTEL CASA 425",
+      "hotelId": "YXLAX425",
+      "geoCode": {
+        "latitude": 34.09505,
+        "longitude": -117.72043
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:08:23"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700100733,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAXGHI",
+      "geoCode": {
+        "latitude": 34.27933,
+        "longitude": -118.47069
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:23:02"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700045585,
+      "name": "DUNES INN SUNSET",
+      "hotelId": "YXLAX191",
+      "geoCode": {
+        "latitude": 34.09846,
+        "longitude": -118.31241
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:15:42"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700102383,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAX437",
+      "geoCode": {
+        "latitude": 33.93108,
+        "longitude": -118.35536
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:21:59"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700069094,
+      "name": "VALUE INN WORLDWIDE INGLEWOOD",
+      "hotelId": "YXLAX516",
+      "geoCode": {
+        "latitude": 33.94577,
+        "longitude": -118.36045
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:22:15"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700109159,
+      "name": "LAGUNA HILLS LODGE",
+      "hotelId": "YXLAXLAG",
+      "geoCode": {
+        "latitude": 33.61378,
+        "longitude": -117.71117
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:13:37"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700110121,
+      "name": "OXFORD PALACE HOTEL AND GALLERIA",
+      "hotelId": "YXLAXOPG",
+      "geoCode": {
+        "latitude": 34.05818,
+        "longitude": -118.30822
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:56"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700145303,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAXAVB",
+      "geoCode": {
+        "latitude": 34.05134,
+        "longitude": -118.2645
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:21:12"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700066648,
+      "name": "FARMER S DAUGHTER HOTEL",
+      "hotelId": "YXLAX193",
+      "geoCode": {
+        "latitude": 34.07362,
+        "longitude": -118.36164
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:56"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700145328,
+      "name": "THE REDBURY HOLLYWOOD AND VINE",
+      "hotelId": "YXLAXTRH",
+      "geoCode": {
+        "latitude": 34.10237,
+        "longitude": -118.32715
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:07:33"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700008935,
+      "name": "KAWADA HOTEL",
+      "hotelId": "YXLAXKAW",
+      "geoCode": {
+        "latitude": 34.05274,
+        "longitude": -118.24772
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:25:24"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700081921,
+      "name": "L.A. SKY BOUTIQUE HOTEL",
+      "hotelId": "YXLAXTAH",
+      "geoCode": {
+        "latitude": 34.04125,
+        "longitude": -118.4295
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:53"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700118855,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAX409",
+      "geoCode": {
+        "latitude": 34.00809,
+        "longitude": -118.30868
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:21:43"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700102429,
+      "name": "BEVERLY TERRACE",
+      "hotelId": "YXLAX183",
+      "geoCode": {
+        "latitude": 34.08021,
+        "longitude": -118.39008
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:19:06"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700102613,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAXHOL",
+      "geoCode": {
+        "latitude": 34.09846,
+        "longitude": -118.30487
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:21:59"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700137851,
+      "name": "VILLA DELLE STELLE",
+      "hotelId": "YXLAXVDS",
+      "geoCode": {
+        "latitude": 34.09895,
+        "longitude": -118.32198
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:29:20"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700155542,
+      "name": "PALIHOTEL MELROSE",
+      "hotelId": "YXLAXPME",
+      "geoCode": {
+        "latitude": 34.08353,
+        "longitude": -118.36292
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:06"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700045586,
+      "name": "THE RITZ MILNER LOS ANGELES",
+      "hotelId": "YXLAX243",
+      "geoCode": {
+        "latitude": 34.04713,
+        "longitude": -118.26074
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:53"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700068832,
+      "name": "LE MONTROSE SUITE HOTEL",
+      "hotelId": "YXLAXLMH",
+      "geoCode": {
+        "latitude": 34.08773,
+        "longitude": -118.38738
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:53:43"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700118856,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAX251",
+      "geoCode": {
+        "latitude": 34.05317,
+        "longitude": -118.27869
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:22:15"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700023065,
+      "name": "AVALON HOTEL BEVERLY HILLS",
+      "hotelId": "YXLAXAVA",
+      "geoCode": {
+        "latitude": 34.05901,
+        "longitude": -118.39726
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:08:23"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700109425,
+      "name": "MALIBU BEACH INN",
+      "hotelId": "YXLAX266",
+      "geoCode": {
+        "latitude": 34.03811,
+        "longitude": -118.67438
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:12:34"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700116550,
+      "name": "SEA VIEW INN AT THE BEACH",
+      "hotelId": "YXLAXSVI",
+      "geoCode": {
+        "latitude": 33.89925,
+        "longitude": -118.41692
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:51:53"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700050860,
+      "name": "THE BELAMAR",
+      "hotelId": "YXLAXBHH",
+      "geoCode": {
+        "latitude": 33.90065,
+        "longitude": -118.3968
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:42:58"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700117995,
+      "name": "MARINA DEL REY HOTEL",
+      "hotelId": "YXLAXMAR",
+      "geoCode": {
+        "latitude": 33.97996,
+        "longitude": -118.44564
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:56"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700018848,
+      "name": "JAMAICA BAY INN",
+      "hotelId": "YXLAX154",
+      "geoCode": {
+        "latitude": 33.9824,
+        "longitude": -118.45816
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:19:54"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700035043,
+      "name": "INN AT MARINA DEL REY",
+      "hotelId": "YXLAX702",
+      "geoCode": {
+        "latitude": 33.98748,
+        "longitude": -118.45387
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:13:05"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700113628,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAXPIC",
+      "geoCode": {
+        "latitude": 33.97999,
+        "longitude": -118.0993
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:22:15"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700062368,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAXRPV",
+      "geoCode": {
+        "latitude": 33.74837,
+        "longitude": -118.30986
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:22:47"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700063794,
+      "name": "REDONDO BEACH HOTEL",
+      "hotelId": "YXLAX413",
+      "geoCode": {
+        "latitude": 33.84678,
+        "longitude": -118.39327
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:05:56"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700023064,
+      "name": "VICEROY SANTA MONICA",
+      "hotelId": "YXLAXPSH",
+      "geoCode": {
+        "latitude": 34.00811,
+        "longitude": -118.49047
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:09:41"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700148387,
+      "name": "AMERICAS BEST VALUE INN",
+      "hotelId": "YXLAXSGA",
+      "geoCode": {
+        "latitude": 33.95135,
+        "longitude": -118.18215
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:23:02"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700113997,
+      "name": "TARZANA INN",
+      "hotelId": "YXLAXTAR",
+      "geoCode": {
+        "latitude": 34.17226,
+        "longitude": -118.55104
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:41"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700038340,
+      "name": "INN AT VENICE BEACH",
+      "hotelId": "YXLAX470",
+      "geoCode": {
+        "latitude": 33.98093,
+        "longitude": -118.46415
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:41"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700038855,
+      "name": "CHAMBERLAIN WEST HOLLYWOOD",
+      "hotelId": "YXLAXSMF",
+      "geoCode": {
+        "latitude": 34.08984,
+        "longitude": -118.37893
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:09:10"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700109240,
+      "name": "LE PARC SUITE HOTEL",
+      "hotelId": "YXLAXPRC",
+      "geoCode": {
+        "latitude": 34.0839,
+        "longitude": -118.37758
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T09:52:56"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700179209,
+      "name": "THE CHARLIE",
+      "hotelId": "YXLAXCHA",
+      "geoCode": {
+        "latitude": 34.05901,
+        "longitude": -118.39726
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T11:07:43"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "LAX",
+      "dupeId": 700110156,
+      "name": "PALIHOUSE WEST HOLLYWOOD",
+      "hotelId": "YXLAXPHH",
+      "geoCode": {
+        "latitude": 34.09095,
+        "longitude": -118.37535
+      },
+      "address": {
+        "countryCode": "US"
+      },
+      "lastUpdate": "2023-06-15T10:01:03"
+    }
+  ],
+  "meta": {
+    "count": 292,
+    "links": {
+      "self": "https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-city?cityCode=LAX"
+    }
+  }
+}
