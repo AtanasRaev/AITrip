@@ -1,6 +1,8 @@
 package com.aitrip.exception;
 
 import com.aitrip.exception.external.amadeus.AmadeusTokenNotFoundException;
+import com.aitrip.exception.external.amadeus.NoFlightsAvailableException;
+import com.aitrip.exception.external.amadeus.NoHotelOffersAvailableException;
 import com.aitrip.exception.external.phone.InvalidPhoneNumberException;
 import com.aitrip.exception.external.phone.PhoneValidationServiceException;
 import com.aitrip.exception.plan.NullPlanCreateDTOException;
@@ -18,6 +20,7 @@ import org.springframework.web.context.request.WebRequest;
 
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -158,6 +161,43 @@ public class GlobalExceptionHandler {
     }
 
     /**
+     * Handles NoFlightsAvailableException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(NoFlightsAvailableException.class)
+    public ResponseEntity<Object> handleNoFlightsAvailableException(
+            NoFlightsAvailableException ex, WebRequest request) {
+        Map<String, Object> additionalInfo = new LinkedHashMap<>();
+        additionalInfo.put("origin", ex.getOrigin());
+        additionalInfo.put("destination", ex.getDestination());
+        additionalInfo.put("startDate", ex.getStartDate());
+        additionalInfo.put("endDate", ex.getEndDate());
+
+        return createTravelErrorResponse(ex, request, HttpStatus.NOT_FOUND, additionalInfo);
+    }
+
+    /**
+     * Handles NoHotelOffersAvailableException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(NoHotelOffersAvailableException.class)
+    public ResponseEntity<Object> handleNoHotelOffersAvailableException(
+            NoHotelOffersAvailableException ex, WebRequest request) {
+        Map<String, Object> additionalInfo = new LinkedHashMap<>();
+        additionalInfo.put("destination", ex.getDestination());
+        additionalInfo.put("startDate", ex.getStartDate());
+        additionalInfo.put("endDate", ex.getEndDate());
+
+        return createTravelErrorResponse(ex, request, HttpStatus.NOT_FOUND, additionalInfo);
+    }
+
+    /**
      * Creates a standardized error response.
      * 
      * @param ex The exception
@@ -172,6 +212,39 @@ public class GlobalExceptionHandler {
         body.put("error", status.getReasonPhrase());
         body.put("message", ex.getMessage());
         body.put("path", request.getDescription(false));
+
+        return new ResponseEntity<>(body, status);
+    }
+
+    /**
+     * Creates a standardized error response for travel-related exceptions.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @param status The HTTP status
+     * @param additionalInfo Additional information to include in the response
+     * @return ResponseEntity with error details
+     */
+    private ResponseEntity<Object> createTravelErrorResponse(Exception ex, WebRequest request, 
+                                                           HttpStatus status, Map<String, Object> additionalInfo) {
+        // Get the basic response body from createErrorResponse
+        ResponseEntity<Object> response = createErrorResponse(ex, request, status);
+
+        // Extract the body and add additional information
+        @SuppressWarnings("unchecked")
+        Map<String, Object> body = (Map<String, Object>) response.getBody();
+
+        if (body != null) {
+            // Add all additional information
+            body.putAll(additionalInfo);
+
+            // Add common options for travel-related exceptions
+            body.put("options", List.of(
+                "Search with flexible dates (±3 days)",
+                "Change destination",
+                "Try different dates"
+            ));
+        }
 
         return new ResponseEntity<>(body, status);
     }
