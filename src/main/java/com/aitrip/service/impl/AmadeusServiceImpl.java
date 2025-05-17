@@ -1,9 +1,13 @@
 package com.aitrip.service.impl;
 
 import com.aitrip.database.dto.hotel.response.HotelResponseDTO;
+import com.aitrip.database.dto.hotel.response.data.HotelDTO;
+import com.aitrip.database.dto.hotel.response.offers.HotelOfferResponseDTO;
 import com.aitrip.database.dto.plan.PlanCreateDTO;
 import com.aitrip.database.dto.flight.request.FlightRequestDTO;
 import com.aitrip.database.dto.flight.response.FlightResponseDTO;
+import com.aitrip.exception.external.amadeus.NoFlightsAvailableException;
+import com.aitrip.exception.external.amadeus.NoHotelOffersAvailableException;
 import com.aitrip.service.AmadeusService;
 import com.aitrip.service.AmadeusTokenService;
 import org.springframework.http.MediaType;
@@ -29,7 +33,7 @@ public class AmadeusServiceImpl implements AmadeusService {
     public FlightResponseDTO getFlights(PlanCreateDTO planCreateDTO) {
         FlightRequestDTO flightRequest = createFlightRequest(planCreateDTO);
 
-        return this.restClient
+        FlightResponseDTO response = this.restClient
                 .post()
                 .uri(AMADEUS_URL + "v2/shopping/flight-offers")
                 .contentType(MediaType.APPLICATION_JSON)
@@ -38,17 +42,64 @@ public class AmadeusServiceImpl implements AmadeusService {
                 .retrieve()
                 .toEntity(FlightResponseDTO.class)
                 .getBody();
+
+        if (response == null || response.getMeta() == null || response.getMeta().getCount() == 0) {
+            throw new NoFlightsAvailableException(
+                "No flights available for the selected dates",
+                planCreateDTO.getOrigin(),
+                planCreateDTO.getDestination(),
+                planCreateDTO.getStartDate().toString(),
+                planCreateDTO.getEndDate().toString()
+            );
+        }
+
+        return response;
     }
 
     @Override
-    public HotelResponseDTO getHotels(String destination) {
-        return this.restClient
+    public HotelOfferResponseDTO getHotelOffers(PlanCreateDTO planCreateDTO) {
+        HotelResponseDTO hotelResponse = this.getHotels(planCreateDTO.getDestination());
+
+        if (hotelResponse == null || hotelResponse.getData() == null || hotelResponse.getData().isEmpty()) {
+            throw new NoHotelOffersAvailableException(
+                "No hotels available for the selected destination",
+                planCreateDTO.getDestination(),
+                planCreateDTO.getStartDate().toString(),
+                planCreateDTO.getEndDate().toString()
+            );
+        }
+
+        List<String> hotelIds = hotelResponse.getData()
+                .stream()
+                .map(HotelDTO::getHotelId)
+                .toList();
+
+        String hotelOffersUri = String.format("/v3/shopping/hotel-offers?hotelIds=%s&checkInDate=%s&checkOutDate=%s&adults=%d&children=%d",
+                String.join(",", hotelIds),
+                planCreateDTO.getStartDate(),
+                planCreateDTO.getEndDate(),
+                planCreateDTO.getAdults(),
+                planCreateDTO.getChildren()
+        );
+
+        HotelOfferResponseDTO response = this.restClient
                 .get()
-                .uri(AMADEUS_URL + String.format("v1/reference-data/locations/hotels/by-city?cityCode=%s", destination))
+                .uri(AMADEUS_URL + hotelOffersUri)
                 .header("Authorization", "Bearer " + this.amadeusTokenService.generateAccessToken().getAccessToken())
                 .retrieve()
-                .toEntity(HotelResponseDTO.class)
+                .toEntity(HotelOfferResponseDTO.class)
                 .getBody();
+
+        if (response == null || response.getData() == null || response.getData().isEmpty()) {
+            throw new NoHotelOffersAvailableException(
+                "No hotel offers available for the selected dates",
+                planCreateDTO.getDestination(),
+                planCreateDTO.getStartDate().toString(),
+                planCreateDTO.getEndDate().toString()
+            );
+        }
+
+        return response;
     }
 
     //TODO: Consider if we need to add logic to catch an error where the access token has expired and we need to manually renew it.
@@ -92,5 +143,16 @@ public class AmadeusServiceImpl implements AmadeusService {
         flightRequest.setSources(List.of("GDS"));
 
         return flightRequest;
+    }
+
+    private HotelResponseDTO getHotels(String destination) {
+        String hotelSearchUri = String.format("v1/reference-data/locations/hotels/by-city?cityCode=%s", destination);
+        return this.restClient
+                .get()
+                .uri(AMADEUS_URL + hotelSearchUri)
+                .header("Authorization", "Bearer " + this.amadeusTokenService.generateAccessToken().getAccessToken())
+                .retrieve()
+                .toEntity(HotelResponseDTO.class)
+                .getBody();
     }
 }
