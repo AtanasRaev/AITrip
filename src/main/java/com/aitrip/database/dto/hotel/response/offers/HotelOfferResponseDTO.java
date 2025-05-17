@@ -11,8 +11,3 @@ public class HotelOfferResponseDTO {
     private List<HotelOfferDataDTO> data;
 }
 
-@Getter
-@Setter
-class HotelOfferDataDTO {
-    // Fields representing hotel offer data
-}
