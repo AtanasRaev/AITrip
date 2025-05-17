@@ -1,5 +1,6 @@
 package com.aitrip.service.impl;
 
+import com.aitrip.database.dto.hotel.response.HotelResponseDTO;
 import com.aitrip.database.dto.plan.PlanCreateDTO;
 import com.aitrip.database.dto.flight.request.FlightRequestDTO;
 import com.aitrip.database.dto.flight.response.FlightResponseDTO;
@@ -13,6 +14,8 @@ import java.util.List;
 
 @Service
 public class AmadeusServiceImpl implements AmadeusService {
+    private static final String AMADEUS_URL = "https://test.api.amadeus.com/";
+
     private final RestClient restClient;
     private final AmadeusTokenService amadeusTokenService;
 
@@ -22,17 +25,30 @@ public class AmadeusServiceImpl implements AmadeusService {
         this.amadeusTokenService = amadeusTokenService;
     }
 
-    private FlightResponseDTO getFlights(PlanCreateDTO planCreateDTO) {
+    @Override
+    public FlightResponseDTO getFlights(PlanCreateDTO planCreateDTO) {
         FlightRequestDTO flightRequest = createFlightRequest(planCreateDTO);
 
         return this.restClient
                 .post()
-                .uri("https://test.api.amadeus.com/v2/shopping/flight-offers")
+                .uri(AMADEUS_URL + "v2/shopping/flight-offers")
                 .contentType(MediaType.APPLICATION_JSON)
                 .header("Authorization", "Bearer " + this.amadeusTokenService.generateAccessToken().getAccessToken())
                 .body(flightRequest)
                 .retrieve()
-                .toEntity(FlightResponseDTO.class).getBody();
+                .toEntity(FlightResponseDTO.class)
+                .getBody();
+    }
+
+    @Override
+    public HotelResponseDTO getHotels(String destination) {
+        return this.restClient
+                .get()
+                .uri(AMADEUS_URL + String.format("v1/reference-data/locations/hotels/by-city?cityCode=%s", destination))
+                .header("Authorization", "Bearer " + this.amadeusTokenService.generateAccessToken().getAccessToken())
+                .retrieve()
+                .toEntity(HotelResponseDTO.class)
+                .getBody();
     }
 
     //TODO: Consider if we need to add logic to catch an error where the access token has expired and we need to manually renew it.
