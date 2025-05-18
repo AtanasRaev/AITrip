@@ -1,6 +1,7 @@
 package com.aitrip.service.impl;
 
 import com.aitrip.config.AmadeusConfig;
+import com.aitrip.config.AmadeusEnvironment;
 import com.aitrip.database.dto.TokenResponseDTO;
 import com.aitrip.exception.external.amadeus.AmadeusTokenNotFoundException;
 import com.aitrip.service.AmadeusTokenService;
@@ -22,11 +23,12 @@ public class AmadeusTokenServiceImpl implements AmadeusTokenService {
         this.restClient = restClient;
     }
 
+    @Override
     @Cacheable("amadeusToken")
-    public TokenResponseDTO generateAccessToken() {
-        MultiValueMap<String,String> form = getFormData();
+    public TokenResponseDTO generateAccessToken(AmadeusEnvironment environment) {
+        MultiValueMap<String,String> form = getFormData(environment);
         TokenResponseDTO dto = restClient.post()
-                .uri("https://test.api.amadeus.com/v1/security/oauth2/token")
+                .uri(this.amadeusConfig.getAmadeusUrl(environment) + "/v1/security/oauth2/token")
                 .contentType(MediaType.APPLICATION_FORM_URLENCODED)
                 .body(form)
                 .retrieve()
@@ -36,11 +38,12 @@ public class AmadeusTokenServiceImpl implements AmadeusTokenService {
         return dto;
     }
 
-    private MultiValueMap<String, String> getFormData() {
+
+    private MultiValueMap<String, String> getFormData(AmadeusEnvironment environment) {
         MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
         formData.add("grant_type", "client_credentials");
-        formData.add("client_id", this.amadeusConfig.getApiKey());
-        formData.add("client_secret", this.amadeusConfig.getApiSecret());
+        formData.add("client_id", this.amadeusConfig.getAmadeusApiKey(environment));
+        formData.add("client_secret", this.amadeusConfig.getAmadeusApiSecret(environment));
         return formData;
     }
 }
