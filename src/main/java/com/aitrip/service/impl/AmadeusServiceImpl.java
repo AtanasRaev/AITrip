@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
+import java.util.ArrayList;
 
 @Service
 public class AmadeusServiceImpl implements AmadeusService {
@@ -90,15 +91,13 @@ public class AmadeusServiceImpl implements AmadeusService {
                 .toEntity(HotelOfferResponseDTO.class)
                 .getBody();
 
-        if (response == null || response.getData() == null || response.getData().isEmpty()) {
-            throw new NoHotelOffersAvailableException(
-                "No hotel offers available for the selected dates",
-                planCreateDTO.getDestination(),
-                planCreateDTO.getStartDate().toString(),
-                planCreateDTO.getEndDate().toString()
-            );
+        if (response == null) {
+            response = new HotelOfferResponseDTO();
+            response.setData(new ArrayList<>());
+        } else if (response.getData() == null) {
+            response.setData(new ArrayList<>());
         }
-
+        
         return response;
     }
 

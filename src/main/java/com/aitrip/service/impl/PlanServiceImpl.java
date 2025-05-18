@@ -14,7 +14,8 @@ public class PlanServiceImpl implements PlanService {
     private final OpenAIService openAiService;
     private final ModelMapper modelMapper;
 
-    public PlanServiceImpl(PlanRepository planRepository, OpenAIService openAiService,
+    public PlanServiceImpl(PlanRepository planRepository,
+                           OpenAIService openAiService,
                            ModelMapper modelMapper) {
         this.planRepository = planRepository;
         this.openAiService = openAiService;
