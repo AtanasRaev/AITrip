@@ -18,6 +18,8 @@ public class HotelDTO {
     private String name;
 
     private String hotelId;
+    
+    private GeoCode geoCode;
 
     private Address address;
 
@@ -27,10 +29,17 @@ public class HotelDTO {
     )
     private OffsetDateTime lastUpdate;
 
+    
+    @Getter
+    @Setter
+    private static class GeoCode {
+        private Double latitude;
+        private Double longitude;
+    }
 
     @Getter
     @Setter
-    public static class Address{
+    private static class Address {
         private String countryCode;
     }
 }
