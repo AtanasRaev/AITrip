@@ -1,6 +1,8 @@
 package com.aitrip.exception;
 
 import com.aitrip.exception.external.amadeus.AmadeusTokenNotFoundException;
+import com.aitrip.exception.external.amadeus.InvalidAmadeusEnvironmentException;
+import com.aitrip.exception.external.amadeus.MissingAmadeusConfigurationException;
 import com.aitrip.exception.external.amadeus.NoFlightsAvailableException;
 import com.aitrip.exception.external.amadeus.NoHotelOffersAvailableException;
 import com.aitrip.exception.external.phone.InvalidPhoneNumberException;
@@ -198,6 +200,40 @@ public class GlobalExceptionHandler {
     }
 
     /**
+     * Handles InvalidAmadeusEnvironmentException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(InvalidAmadeusEnvironmentException.class)
+    public ResponseEntity<Object> handleInvalidAmadeusEnvironmentException(
+            InvalidAmadeusEnvironmentException ex, WebRequest request) {
+        Map<String, Object> additionalInfo = new LinkedHashMap<>();
+        additionalInfo.put("invalidEnvironment", ex.getEnvironment());
+        additionalInfo.put("validEnvironments", ex.getValidEnvironments());
+
+        return createAmadeusConfigErrorResponse(ex, request, HttpStatus.BAD_REQUEST, additionalInfo);
+    }
+
+    /**
+     * Handles MissingAmadeusConfigurationException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(MissingAmadeusConfigurationException.class)
+    public ResponseEntity<Object> handleMissingAmadeusConfigurationException(
+            MissingAmadeusConfigurationException ex, WebRequest request) {
+        Map<String, Object> additionalInfo = new LinkedHashMap<>();
+        additionalInfo.put("environment", ex.getEnvironment());
+        additionalInfo.put("missingProperty", ex.getMissingProperty());
+
+        return createAmadeusConfigErrorResponse(ex, request, HttpStatus.INTERNAL_SERVER_ERROR, additionalInfo);
+    }
+
+    /**
      * Creates a standardized error response.
      * 
      * @param ex The exception
@@ -244,6 +280,42 @@ public class GlobalExceptionHandler {
                 "Change destination",
                 "Try different dates"
             ));
+        }
+
+        return new ResponseEntity<>(body, status);
+    }
+
+    /**
+     * Creates a standardized error response for Amadeus configuration exceptions.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @param status The HTTP status
+     * @param additionalInfo Additional information to include in the response
+     * @return ResponseEntity with error details
+     */
+    private ResponseEntity<Object> createAmadeusConfigErrorResponse(Exception ex, WebRequest request, 
+                                                                  HttpStatus status, Map<String, Object> additionalInfo) {
+        ResponseEntity<Object> response = createErrorResponse(ex, request, status);
+
+        @SuppressWarnings("unchecked")
+        Map<String, Object> body = (Map<String, Object>) response.getBody();
+
+        if (body != null) {
+            body.putAll(additionalInfo);
+
+            if (status == HttpStatus.BAD_REQUEST) {
+                body.put("suggestions", List.of(
+                    "Use 'test' or 'production' as environment values",
+                    "Check your environment parameter spelling"
+                ));
+            } else if (status == HttpStatus.INTERNAL_SERVER_ERROR) {
+                body.put("suggestions", List.of(
+                    "Check your application.yaml configuration",
+                    "Ensure all required environment variables are set",
+                    "Verify Amadeus API credentials"
+                ));
+            }
         }
 
         return new ResponseEntity<>(body, status);
