@@ -20,10 +20,10 @@ public class Prompt {
     @Column(name = "plan_name", nullable = false, unique = true)
     private String planName;
 
-    @Column(name = "system_prompt", nullable = false)
+    @Column(name = "system_prompt", nullable = false, columnDefinition = "TEXT")
     private String systemPrompt;
 
-    @Column(name = "user_prompt", nullable = false)
+    @Column(name = "user_prompt", nullable = false, columnDefinition = "TEXT")
     private String userPrompt;
 
     @Convert(converter = ChatModelConverter.class)
