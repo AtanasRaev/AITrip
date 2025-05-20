@@ -1,0 +1,1967 @@
+{
+  "data": [
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "BWLAX517",
+        "chainCode": "BW",
+        "dupeId": "700063777",
+        "name": "Best Western Plus Suites Hotel - Los Angeles LAX Airport",
+        "cityCode": "LAX",
+        "latitude": 33.94561,
+        "longitude": -118.36579
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "56C4EMGQO0",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "3NS",
+          "rateFamilyEstimated": {
+            "code": "PRO",
+            "type": "P"
+          },
+          "commission": {
+            "percentage": "10"
+          },
+          "boardType": "BREAKFAST",
+          "room": {
+            "type": "C1K",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 1,
+              "bedType": "KING"
+            },
+            "description": {
+              "text": "MULTI NIGHT STAY PROMOTION\n1 KING BED,FULL BRKFST,NSMK,MICROWAVE FRIDGE\nSTANDARD",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "858.44",
+            "total": "993.14",
+            "taxes": [
+              {
+                "code": "TOTAL_TAX",
+                "amount": "134.70",
+                "currency": "USD",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "base": "171.69"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-07",
+                  "base": "171.69"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "deadline": "2025-06-01T16:00:00-07:00"
+              }
+            ],
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/56C4EMGQO0"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=BWLAX517&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "DILAX728",
+        "chainCode": "DI",
+        "dupeId": "700103708",
+        "name": "Days Inn & Suites by Wyndham Artesia",
+        "cityCode": "LAX",
+        "latitude": 33.87145,
+        "longitude": -118.08164
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "DYLMG70L3G",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "SP1",
+          "rateFamilyEstimated": {
+            "code": "PRO",
+            "type": "P"
+          },
+          "category": "PRO",
+          "commission": {
+            "percentage": "10.0"
+          },
+          "room": {
+            "type": "C1K",
+            "typeEstimated": {
+              "beds": 1,
+              "bedType": "KING"
+            },
+            "description": {
+              "text": "PAY NOW AND SAVE \n1 King NSMK with free WiFi, free light breakfast, mini-fridge, \nmicrowave, HDTV, desk ",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "total": "515.36",
+            "variations": {
+              "average": {
+                "total": "103.07"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-05",
+                  "base": "89.25"
+                },
+                {
+                  "startDate": "2025-06-05",
+                  "endDate": "2025-06-06",
+                  "base": "91.80"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "97.75"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "amount": "515.36"
+              }
+            ],
+            "prepay": {
+              "deadline": "2025-05-20T00:00:00",
+              "acceptedPayments": {
+                "creditCards": [
+                  "AX",
+                  "DC",
+                  "DS",
+                  "CA",
+                  "VI"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  }
+                ]
+              }
+            },
+            "paymentType": "prepay"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/DYLMG70L3G"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=DILAX728&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "EALAX297",
+        "chainCode": "EA",
+        "dupeId": "700105526",
+        "name": "Extended Stay America Temecula",
+        "cityCode": "LAX",
+        "latitude": 33.51751,
+        "longitude": -117.16086
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "WJ8OY5LQM9",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "A05",
+          "rateFamilyEstimated": {
+            "code": "PRO",
+            "type": "P"
+          },
+          "commission": {
+            "percentage": "10.00"
+          },
+          "room": {
+            "type": "A05",
+            "typeEstimated": {
+              "category": "ACCESSIBLE_ROOM",
+              "beds": 1,
+              "bedType": "QUEEN"
+            },
+            "description": {
+              "text": "ADVANCE PURCHASE PREPAY IN FULL NON-CANCELLABLE \nSTANDARD STUDIO 1 QUEEN NONSMKNG ACCESSIBLE\nFREE WIFI AND GRAB AND GO BKFST 32IN LCD TV",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "596.55",
+            "total": "668.90",
+            "variations": {
+              "average": {
+                "base": "119.31"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-06",
+                  "base": "208.99"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "208.99"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "description": {
+                  "text": "NON-REFUNDABLE RATE"
+                }
+              }
+            ],
+            "prepay": {
+              "deadline": "2025-05-21T23:59:00",
+              "acceptedPayments": {
+                "creditCards": [
+                  "VI",
+                  "VS",
+                  "CA",
+                  "MC",
+                  "DS",
+                  "DC",
+                  "CB",
+                  "AX"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "VS"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "MC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "CB"
+                  },
+                  {
+                    "vendorCode": "AX"
+                  }
+                ]
+              }
+            },
+            "paymentType": "prepay"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/WJ8OY5LQM9"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=EALAX297&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "GDLAXHWH",
+        "chainCode": "GD",
+        "dupeId": "534071651",
+        "name": "StaysPro Hollywood Homes",
+        "cityCode": "LAX",
+        "latitude": 34.08386,
+        "longitude": -118.35733
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "1VZD3BEWQ1",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "BAR",
+          "rateFamilyEstimated": {
+            "code": "BAR",
+            "type": "P"
+          },
+          "commission": {
+            "percentage": "15.00"
+          },
+          "room": {
+            "type": "C1Q",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 1,
+              "bedType": "QUEEN"
+            },
+            "description": {
+              "text": "BEST AVAILABLE RO RATE \nOne Bedroom -55sqm -Queen Bed -Sofa Bed -100 mbps -Workdesk -\nEnsuite -Smart TV -Streaming Service like Netflix -\nAirconditioning -Hairdryer -Hypoallergenic Bed Linen -Tea and \nCoffee Maker -Ironing -Full Kitchen -Free High Internet ",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "total": "1098.95",
+            "variations": {
+              "average": {
+                "total": "219.79"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-04",
+                  "base": "154.00"
+                },
+                {
+                  "startDate": "2025-06-04",
+                  "endDate": "2025-06-05",
+                  "base": "155.00"
+                },
+                {
+                  "startDate": "2025-06-05",
+                  "endDate": "2025-06-06",
+                  "base": "154.00"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "166.00"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "deadline": "2025-05-30T00:00:00-07:00",
+                "amount": "1098.95"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "AX",
+                  "DC",
+                  "DS",
+                  "CA",
+                  "VI",
+                  "EC"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "EC"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/1VZD3BEWQ1"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=GDLAXHWH&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "GILAX323",
+        "chainCode": "GI",
+        "dupeId": "700008314",
+        "name": "Hilton Garden Inn Los Angeles/Hollywood",
+        "cityCode": "LAX",
+        "latitude": 34.10647,
+        "longitude": -118.33761
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "I5YFJY3TLZ",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "RAC",
+          "commission": {
+            "percentage": "10"
+          },
+          "room": {
+            "type": "A00",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 2,
+              "bedType": "QUEEN"
+            },
+            "description": {
+              "text": "RESTRICTED CXL\n2 QUEEN BEDS\nCOMP WIFI-HDTV WITH HIDEF CHANNELS\nREFRIGERATOR-MICROWAVE-MP3 CLOCK-POD COFFEE",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "1060.97",
+            "total": "1256.14",
+            "taxes": [
+              {
+                "code": "TOTAL_TAX",
+                "pricingFrequency": "PER_STAY",
+                "pricingMode": "PER_PRODUCT",
+                "amount": "171.88",
+                "currency": "USD",
+                "included": false
+              },
+              {
+                "code": "SERVICE_CHARGE",
+                "pricingFrequency": "PER_STAY",
+                "pricingMode": "PER_PRODUCT",
+                "amount": "23.29",
+                "currency": "USD",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "base": "212.19"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-03",
+                  "base": "196.46"
+                },
+                {
+                  "startDate": "2025-06-03",
+                  "endDate": "2025-06-04",
+                  "base": "215.26"
+                },
+                {
+                  "startDate": "2025-06-04",
+                  "endDate": "2025-06-05",
+                  "base": "204.92"
+                },
+                {
+                  "startDate": "2025-06-05",
+                  "endDate": "2025-06-06",
+                  "base": "207.13"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "237.20"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "deadline": "2025-05-28T23:59:00-07:00",
+                "description": {
+                  "text": "Plus Taxes and fees where appropriate."
+                },
+                "amount": "196.46"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "VI",
+                  "CA",
+                  "AX",
+                  "DC",
+                  "DS",
+                  "JC",
+                  "CU"
+                ],
+                "methods": [
+                  "CREDIT_CARD",
+                  "VCC_EXTERNAL_PROVIDER"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "JC"
+                  },
+                  {
+                    "vendorCode": "CU"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/I5YFJY3TLZ"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=GILAX323&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "HHLAX611",
+        "chainCode": "HH",
+        "dupeId": "700037561",
+        "name": "Hilton Los Angeles Culver City",
+        "cityCode": "LAX",
+        "latitude": 33.98263,
+        "longitude": -118.39568
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "ZIDIGE00CU",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "RAC",
+          "rateFamilyEstimated": {
+            "code": "BAR",
+            "type": "P"
+          },
+          "commission": {
+            "percentage": "10"
+          },
+          "room": {
+            "type": "A0A",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 2,
+              "bedType": "QUEEN"
+            },
+            "description": {
+              "text": "FLEXIBLE RATE\nCULVER QUEENS - 2 QUEEN BEDS\nREFRIGERATOR - 55 INCH FLAT SCREEN TV\nCOMPLIMENTARY INTERNET - IN ROOM SAFE",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "1165.00",
+            "total": "1330.69",
+            "taxes": [
+              {
+                "code": "TOTAL_TAX",
+                "pricingFrequency": "PER_STAY",
+                "pricingMode": "PER_PRODUCT",
+                "amount": "163.42",
+                "currency": "USD",
+                "included": false
+              },
+              {
+                "code": "SERVICE_CHARGE",
+                "pricingFrequency": "PER_STAY",
+                "pricingMode": "PER_PRODUCT",
+                "amount": "2.27",
+                "currency": "USD",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "base": "233.00"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-03",
+                  "base": "219.00"
+                },
+                {
+                  "startDate": "2025-06-03",
+                  "endDate": "2025-06-05",
+                  "base": "249.00"
+                },
+                {
+                  "startDate": "2025-06-05",
+                  "endDate": "2025-06-06",
+                  "base": "219.00"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "229.00"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "deadline": "2025-05-31T23:59:00-07:00",
+                "description": {
+                  "text": "Plus Taxes and fees where appropriate."
+                },
+                "amount": "219.00"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "VI",
+                  "CA",
+                  "AX",
+                  "DC",
+                  "DS",
+                  "JC",
+                  "CU"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "JC"
+                  },
+                  {
+                    "vendorCode": "CU"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/ZIDIGE00CU"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HHLAX611&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "HILAX41B",
+        "chainCode": "HI",
+        "dupeId": "700107369",
+        "name": "HOLIDAY INN EXP&STES ONTARIO ARPT-MILLS",
+        "cityCode": "LAX",
+        "latitude": 34.07947,
+        "longitude": -117.5576
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "XS7BTUMT0O",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "V6F",
+          "rateFamilyEstimated": {
+            "code": "PRO",
+            "type": "P"
+          },
+          "boardType": "BREAKFAST",
+          "room": {
+            "type": "*2Q",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 2,
+              "bedType": "QUEEN"
+            },
+            "description": {
+              "text": "STAY LONGER SAVE\n2 Queen Standard 312 Sqft Microwave Minifridge",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "710.00",
+            "total": "817.92",
+            "taxes": [
+              {
+                "code": "TOTAL_TAX",
+                "percentage": "15.20",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "base": "142.00"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-03",
+                  "base": "131.00"
+                },
+                {
+                  "startDate": "2025-06-03",
+                  "endDate": "2025-06-04",
+                  "base": "139.00"
+                },
+                {
+                  "startDate": "2025-06-04",
+                  "endDate": "2025-06-05",
+                  "base": "142.00"
+                },
+                {
+                  "startDate": "2025-06-05",
+                  "endDate": "2025-06-06",
+                  "base": "130.00"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "168.00"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "deposit": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "AX",
+                  "VI",
+                  "CA",
+                  "DC",
+                  "CB",
+                  "JC",
+                  "DS"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "CB"
+                  },
+                  {
+                    "vendorCode": "JC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  }
+                ]
+              }
+            },
+            "paymentType": "deposit"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/XS7BTUMT0O"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HILAX41B&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "HJLAX872",
+        "chainCode": "HJ",
+        "dupeId": "700155670",
+        "name": "Howard Johnson by Wyndham Pasadena",
+        "cityCode": "LAX",
+        "latitude": 34.14616,
+        "longitude": -118.11753
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "MIQ88BF0RD",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "SP1",
+          "rateFamilyEstimated": {
+            "code": "PRO",
+            "type": "P"
+          },
+          "category": "PRO",
+          "commission": {
+            "percentage": "10.0"
+          },
+          "room": {
+            "type": "C1K",
+            "typeEstimated": {
+              "beds": 1,
+              "bedType": "KING"
+            },
+            "description": {
+              "text": "PAY NOW AND SAVE \n1 King NSMK with free WiFi, free light breakfast, mini-fridge, \nmicrowave, hair dryer ",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "total": "679.40",
+            "variations": {
+              "average": {
+                "total": "135.88"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-06",
+                  "base": "101.15"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "175.10"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "amount": "679.40"
+              }
+            ],
+            "deposit": {
+              "deadline": "2025-05-20T00:00:00",
+              "acceptedPayments": {
+                "creditCards": [
+                  "AX",
+                  "DC",
+                  "DS",
+                  "CA",
+                  "VI"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  }
+                ]
+              }
+            },
+            "paymentType": "deposit"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/MIQ88BF0RD"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HJLAX872&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "HXLAX153",
+        "chainCode": "HX",
+        "dupeId": "700035660",
+        "name": "Hampton Inn and Suites Hermosa Beach",
+        "cityCode": "LAX",
+        "latitude": 33.86585,
+        "longitude": -118.39315
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "PLYOSDMP9U",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "RAC",
+          "commission": {
+            "percentage": "10"
+          },
+          "boardType": "BREAKFAST",
+          "room": {
+            "type": "A0O",
+            "typeEstimated": {
+              "category": "ACCESSIBLE_ROOM",
+              "beds": 1,
+              "bedType": "KING"
+            },
+            "description": {
+              "text": "RESTRICTED CXL\n1 KING MOBILITY ACCESS ROLL IN SHOWER NOSMOK\nREFRIGERATOR/HDTV/WORK AREA\nFREE WI-FI/HOT BREAKFAST INCLUDED",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "1104.74",
+            "total": "1261.61",
+            "taxes": [
+              {
+                "code": "TOTAL_TAX",
+                "pricingFrequency": "PER_STAY",
+                "pricingMode": "PER_PRODUCT",
+                "amount": "154.66",
+                "currency": "USD",
+                "included": false
+              },
+              {
+                "code": "SERVICE_CHARGE",
+                "pricingFrequency": "PER_STAY",
+                "pricingMode": "PER_PRODUCT",
+                "amount": "2.21",
+                "currency": "USD",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "base": "220.95"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-03",
+                  "base": "219.98"
+                },
+                {
+                  "startDate": "2025-06-03",
+                  "endDate": "2025-06-04",
+                  "base": "220.33"
+                },
+                {
+                  "startDate": "2025-06-04",
+                  "endDate": "2025-06-05",
+                  "base": "222.63"
+                },
+                {
+                  "startDate": "2025-06-05",
+                  "endDate": "2025-06-06",
+                  "base": "221.83"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "219.96"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "deadline": "2025-05-28T23:59:00-07:00",
+                "description": {
+                  "text": "Plus Taxes and fees where appropriate."
+                },
+                "amount": "219.98"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "VI",
+                  "CA",
+                  "AX",
+                  "DC",
+                  "DS",
+                  "JC",
+                  "CU"
+                ],
+                "methods": [
+                  "CREDIT_CARD",
+                  "VCC_EXTERNAL_PROVIDER"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "JC"
+                  },
+                  {
+                    "vendorCode": "CU"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/PLYOSDMP9U"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HXLAX153&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "MXLAX001",
+        "chainCode": "MX",
+        "dupeId": "700157487",
+        "name": "Motel 6 Gardena, CA - South",
+        "cityCode": "LAX",
+        "latitude": 33.87148,
+        "longitude": -118.27648
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "OWKJ6ETGUC",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "RAC",
+          "rateFamilyEstimated": {
+            "code": "RAC",
+            "type": "P"
+          },
+          "commission": {
+            "percentage": "10.00"
+          },
+          "room": {
+            "type": "N1K",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 1,
+              "bedType": "KING"
+            },
+            "description": {
+              "text": "Rack\n1 KING BED / NON-SMOKING, MICFRIDGE",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "536.95",
+            "total": "585.38",
+            "taxes": [
+              {
+                "code": "TOTAL_TAX",
+                "amount": "48.43",
+                "currency": "USD",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "base": "107.39"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-06",
+                  "base": "103.99"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "120.99"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "deadline": "2025-06-01T23:59:00-07:00"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "GX"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "GX"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/OWKJ6ETGUC"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=MXLAX001&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "RYLAXB67",
+        "chainCode": "RY",
+        "dupeId": "700116113",
+        "name": "Rodeway Inn Artesia Cerritos",
+        "cityCode": "LAX",
+        "latitude": 33.87286,
+        "longitude": -118.08027
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "VE4QI1P0TK",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "AAA",
+          "rateFamilyEstimated": {
+            "code": "AAA",
+            "type": "C"
+          },
+          "category": "PRO",
+          "commission": {
+            "percentage": "10"
+          },
+          "room": {
+            "type": "A1K",
+            "typeEstimated": {
+              "category": "ACCESSIBLE_ROOM",
+              "beds": 1,
+              "bedType": "KING"
+            },
+            "description": {
+              "text": "AAA Rate\n1 KING BED/SMOKING/ACCESSIBLE/Hair Dryer/ Table\nand Chairs/Heat Lamp in Bathrm",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "434.70",
+            "total": "489.04",
+            "taxes": [
+              {
+                "code": "ROOM_TAX",
+                "pricingFrequency": "PER_STAY",
+                "pricingMode": "PER_PRODUCT",
+                "amount": "54.34",
+                "currency": "USD",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "base": "86.94"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-06",
+                  "base": "86.40"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "89.10"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "numberOfNights": 1,
+                "deadline": "2025-06-01T16:00:00-07:00"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "CB",
+                  "VI",
+                  "BA",
+                  "DS",
+                  "IK",
+                  "MC",
+                  "CA",
+                  "EC",
+                  "BC",
+                  "JC",
+                  "DN",
+                  "DC",
+                  "AX"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "CB"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "BA"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "IK"
+                  },
+                  {
+                    "vendorCode": "MC"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "EC"
+                  },
+                  {
+                    "vendorCode": "BC"
+                  },
+                  {
+                    "vendorCode": "JC"
+                  },
+                  {
+                    "vendorCode": "DN"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "AX"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/VE4QI1P0TK"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=RYLAXB67&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "SILAX598",
+        "chainCode": "SI",
+        "dupeId": "700022298",
+        "name": "Sheraton Grand Los Angeles",
+        "cityCode": "LAX",
+        "latitude": 34.04787,
+        "longitude": -118.25838
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "9YV09CDWS2",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "RAC",
+          "rateFamilyEstimated": {
+            "code": "PRO",
+            "type": "P"
+          },
+          "room": {
+            "type": "SLE",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 2,
+              "bedType": "QUEEN"
+            },
+            "description": {
+              "text": "Stay Longer and Save\nTraditional, 2 Queen, Mini fridge,\n325sqft/29sqm, Wireless internet, for a fee,",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "1158.00",
+            "total": "1519.60",
+            "variations": {
+              "average": {
+                "base": "231.60"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-06",
+                  "base": "228.00"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "246.00"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "numberOfNights": 1,
+                "deadline": "2025-05-31T23:59:00-07:00",
+                "amount": "264.48"
+              }
+            ],
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/9YV09CDWS2"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=SILAX598&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "TQLAX001",
+        "chainCode": "TQ",
+        "dupeId": "700051579",
+        "name": "Azure Hotel & Suites, Trademark Collection by Wyndham",
+        "cityCode": "LAX",
+        "latitude": 34.06409,
+        "longitude": -117.60947
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "187QV0ZYT8",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "AR3",
+          "rateFamilyEstimated": {
+            "code": "SRS",
+            "type": "C"
+          },
+          "category": "PRO",
+          "commission": {
+            "percentage": "10.0"
+          },
+          "room": {
+            "type": "C1K",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 1,
+              "bedType": "KING"
+            },
+            "description": {
+              "text": "AARP PROMOTIONAL RATE \n1 King NSMK with 512 square feet, free WiFi, free buffet \nbreakfast, sofa bed, sitting area ",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "total": "594.75",
+            "variations": {
+              "average": {
+                "total": "118.95"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-04",
+                  "base": "92.66"
+                },
+                {
+                  "startDate": "2025-06-04",
+                  "endDate": "2025-06-06",
+                  "base": "94.30"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "143.50"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "numberOfNights": 1,
+                "deadline": "2025-06-01T16:00:00-07:00"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "AX",
+                  "DC",
+                  "DS",
+                  "JC",
+                  "CA",
+                  "VI"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "JC"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/187QV0ZYT8"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=TQLAX001&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "WVLAXARG",
+        "chainCode": "WV",
+        "dupeId": "700110907",
+        "name": "Sunset Tower Hotel",
+        "cityCode": "LAX",
+        "latitude": 34.09559,
+        "longitude": -118.3719
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "V9M0VAF54W",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "PRO",
+          "rateFamilyEstimated": {
+            "code": "PRO",
+            "type": "P"
+          },
+          "category": "PRO",
+          "commission": {
+            "percentage": "10.0"
+          },
+          "room": {
+            "type": "E1Q",
+            "typeEstimated": {
+              "category": "SUPERIOR_ROOM",
+              "beds": 1,
+              "bedType": "QUEEN"
+            },
+            "description": {
+              "text": "Advanced Purchase Rate\nSUPERIOR RM W 1 QUEEN BED HI SPD INTERNET 350ft\nAdvanced Purchase 15PCT OFF This rate is",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "total": "2355.97",
+            "taxes": [
+              {
+                "code": "MISCELLANEOUS",
+                "percentage": "15.50",
+                "included": false
+              },
+              {
+                "code": "RESORT_FEE",
+                "pricingFrequency": "PER_NIGHT",
+                "pricingMode": "PER_PRODUCT",
+                "amount": "45.00",
+                "currency": "USD",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "total": "471.19"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-04",
+                  "base": "336.00"
+                },
+                {
+                  "startDate": "2025-06-04",
+                  "endDate": "2025-06-05",
+                  "base": "349.00"
+                },
+                {
+                  "startDate": "2025-06-05",
+                  "endDate": "2025-06-06",
+                  "base": "378.00"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "446.00"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {}
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "AX",
+                  "VI",
+                  "MC",
+                  "DS",
+                  "DC",
+                  "CB"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "MC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "CB"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/V9M0VAF54W"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=WVLAXARG&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "YXLAX077",
+        "chainCode": "YX",
+        "dupeId": "700217469",
+        "name": "Hotel Normandie",
+        "cityCode": "LAX",
+        "latitude": 34.06331,
+        "longitude": -118.3007
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "G5RXJMNPCU",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "COR",
+          "rateFamilyEstimated": {
+            "code": "COR",
+            "type": "P"
+          },
+          "category": "COR",
+          "commission": {
+            "percentage": "10.0"
+          },
+          "room": {
+            "type": "C1K",
+            "typeEstimated": {
+              "category": "STANDARD_ROOM",
+              "beds": 1,
+              "bedType": "KING"
+            },
+            "description": {
+              "text": "CORPORATE RATE \nPillowtop king-size bedroom ",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "total": "854.92",
+            "variations": {
+              "average": {
+                "total": "170.98"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-06",
+                  "base": "139.00"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "181.00"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "numberOfNights": 1,
+                "deadline": "2025-06-02T15:00:00-07:00"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "AX",
+                  "DC",
+                  "DS",
+                  "JC",
+                  "CA",
+                  "VI",
+                  "UP"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  },
+                  {
+                    "vendorCode": "JC"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "UP"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/G5RXJMNPCU"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=YXLAX077&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "YZLAXDA9",
+        "chainCode": "YZ",
+        "dupeId": "700319993",
+        "name": "STAYBRIDGE STES CORONA SOUTH",
+        "cityCode": "LAX",
+        "latitude": 33.8168,
+        "longitude": -117.51041
+      },
+      "available": true,
+      "offers": [
+        {
+          "id": "VEOXJY8JGM",
+          "checkInDate": "2025-06-02",
+          "checkOutDate": "2025-06-07",
+          "rateCode": "00M",
+          "rateFamilyEstimated": {
+            "code": "PRO",
+            "type": "P"
+          },
+          "boardType": "BREAKFAST",
+          "room": {
+            "type": "*RH",
+            "typeEstimated": {
+              "category": "SUITE",
+              "beds": 1,
+              "bedType": "DOUBLE"
+            },
+            "description": {
+              "text": "IHG ADVANCE SAVER Save and book with\nconfidence. No deposit required. Fully\nStudio Suite When you arrive at the hotel we\nwill do our best to meet your room type",
+              "lang": "EN"
+            }
+          },
+          "guests": {
+            "adults": 1
+          },
+          "price": {
+            "currency": "USD",
+            "base": "721.00",
+            "total": "794.54",
+            "taxes": [
+              {
+                "code": "TOTAL_TAX",
+                "percentage": "10.20",
+                "included": false
+              }
+            ],
+            "variations": {
+              "average": {
+                "base": "144.20"
+              },
+              "changes": [
+                {
+                  "startDate": "2025-06-02",
+                  "endDate": "2025-06-03",
+                  "base": "114.00"
+                },
+                {
+                  "startDate": "2025-06-03",
+                  "endDate": "2025-06-04",
+                  "base": "121.00"
+                },
+                {
+                  "startDate": "2025-06-04",
+                  "endDate": "2025-06-05",
+                  "base": "116.00"
+                },
+                {
+                  "startDate": "2025-06-05",
+                  "endDate": "2025-06-06",
+                  "base": "143.00"
+                },
+                {
+                  "startDate": "2025-06-06",
+                  "endDate": "2025-06-07",
+                  "base": "227.00"
+                }
+              ]
+            }
+          },
+          "policies": {
+            "cancellations": [
+              {
+                "deadline": "2025-05-28T18:00:00-07:00"
+              }
+            ],
+            "guarantee": {
+              "acceptedPayments": {
+                "creditCards": [
+                  "AX",
+                  "VI",
+                  "CA",
+                  "DC",
+                  "CB",
+                  "JC",
+                  "DS"
+                ],
+                "methods": [
+                  "CREDIT_CARD"
+                ],
+                "creditCardPolicies": [
+                  {
+                    "vendorCode": "AX"
+                  },
+                  {
+                    "vendorCode": "VI"
+                  },
+                  {
+                    "vendorCode": "CA"
+                  },
+                  {
+                    "vendorCode": "DC"
+                  },
+                  {
+                    "vendorCode": "CB"
+                  },
+                  {
+                    "vendorCode": "JC"
+                  },
+                  {
+                    "vendorCode": "DS"
+                  }
+                ]
+              }
+            },
+            "paymentType": "guarantee"
+          },
+          "self": "https://api.amadeus.com/v3/shopping/hotel-offers/VEOXJY8JGM"
+        }
+      ],
+      "self": "https://api.amadeus.com/v3/shopping/hotel-offers?hotelIds=YZLAXDA9&adults=1&checkInDate=2025-06-02&checkOutDate=2025-06-07"
+    }
+  ],
+  "warnings": [
+    {
+      "code": 3664,
+      "title": "NO ROOMS AVAILABLE AT REQUESTED PROPERTY",
+      "detail": "Provider Error - NO ROOMS AVAILABLE AT REQUESTED PROPERTY",
+      "source": {
+        "parameter": "hotelIds=FGLAXLEX"
+      }
+    },
+    {
+      "code": 11,
+      "title": "UNABLE TO PROCESS",
+      "detail": "Provider Error - UNABLE TO PROCESS",
+      "source": {
+        "parameter": "hotelIds=HHLAX862,RCLAXMAR,RCLAXRLR"
+      }
+    }
+  ]
+}
