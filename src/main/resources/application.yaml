@@ -26,11 +26,9 @@ app:
       test:
         key: ${AMADEUS_API_TEST_KEY}
         secret: ${AMADEUS_API_TEST_SECRET}
-        url: https://test.api.amadeus.com/
       production:
         key: ${AMADEUS_API_PRODUCTION_KEY}
         secret: ${AMADEUS_API_PRODUCTION_SECRET}
-        url: https://api.amadeus.com/
   openai:
     api:
       key: ${OPENAI_API_KEY}
