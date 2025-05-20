@@ -21,11 +21,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class AmadeusServiceImpl implements AmadeusService {
-    private static final AmadeusEnvironment[] VALID_ENVIRONMENTS = {
-            AmadeusEnvironment.TEST,
-            AmadeusEnvironment.PRODUCTION
-    };
-
     private final Gson gson;
     private final Amadeus amadeusProd;
     private final Amadeus amadeusTest;
@@ -163,18 +158,6 @@ public class AmadeusServiceImpl implements AmadeusService {
         return switch (env) {
             case PRODUCTION -> amadeusProd;
             case TEST -> amadeusTest;
-            default -> throw new InvalidAmadeusEnvironmentException(
-                    "Invalid environment: " + env,
-                    env.getValue(),
-                    getValidEnvironmentStrings());
         };
-    }
-
-    private String[] getValidEnvironmentStrings() {
-        String[] validEnvironmentStrings = new String[VALID_ENVIRONMENTS.length];
-        for (int i = 0; i < VALID_ENVIRONMENTS.length; i++) {
-            validEnvironmentStrings[i] = VALID_ENVIRONMENTS[i].getValue();
-        }
-        return validEnvironmentStrings;
     }
 }
