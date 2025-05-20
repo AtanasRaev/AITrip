@@ -23,7 +23,7 @@ public class PromptCreateDTO {
     private ChatModel model;
 
     @Positive
-    private Long maxCompletionsTokens;
+    private Long maxCompletionTokens;
 
     @DecimalMin("0.0")
     @DecimalMax("2.0")
