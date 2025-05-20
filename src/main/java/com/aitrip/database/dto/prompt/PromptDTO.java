@@ -18,7 +18,7 @@ public class PromptDTO {
 
     private ChatModel model;
 
-    private Long maxCompletionsTokens;
+    private Long maxCompletionTokens;
 
     private Double temperature;
 

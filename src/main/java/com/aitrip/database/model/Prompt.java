@@ -30,8 +30,8 @@ public class Prompt {
     @Column(nullable = false)
     private ChatModel model;
 
-    @Column(name = "max_completions_tokens")
-    private Long maxCompletionsTokens;
+    @Column(name = "max_completion_tokens")
+    private Long maxCompletionTokens;
 
     private Double temperature;
 

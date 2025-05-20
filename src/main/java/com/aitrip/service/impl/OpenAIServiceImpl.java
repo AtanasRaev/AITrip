@@ -67,8 +67,8 @@ public class OpenAIServiceImpl implements OpenAIService {
                 .addSystemMessage(promptDTO.getSystemPrompt())
                 .addUserMessage(promptDTO.getUserPrompt());
 
-        if (promptDTO.getMaxCompletionsTokens() != null) {
-            paramsBuilder.maxCompletionTokens(promptDTO.getMaxCompletionsTokens());
+        if (promptDTO.getMaxCompletionTokens() != null) {
+            paramsBuilder.maxCompletionTokens(promptDTO.getMaxCompletionTokens());
         }
 
         if (promptDTO.getTemperature() != null) {

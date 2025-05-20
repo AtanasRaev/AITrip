@@ -54,7 +54,7 @@ public class Plan {
     @Column(name = "visa_requirements")
     private String visaRequirements;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String notes;
 
     @CreationTimestamp

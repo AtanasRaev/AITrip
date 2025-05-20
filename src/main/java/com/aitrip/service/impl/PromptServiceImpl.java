@@ -113,7 +113,7 @@ public class PromptServiceImpl implements PromptService {
         } else {
             prompt.setTemperature(null);
             prompt.setFrequencyPenalty(null);
-            prompt.setMaxCompletionsTokens(null);
+            prompt.setMaxCompletionTokens(null);
             prompt.setPresencePenalty(null);
             prompt.setTopP(null);
         }
