@@ -1,10 +1,6 @@
 package com.aitrip.exception;
 
-import com.aitrip.exception.external.amadeus.AmadeusTokenNotFoundException;
-import com.aitrip.exception.external.amadeus.InvalidAmadeusEnvironmentException;
-import com.aitrip.exception.external.amadeus.MissingAmadeusConfigurationException;
-import com.aitrip.exception.external.amadeus.NoFlightsAvailableException;
-import com.aitrip.exception.external.amadeus.NoHotelOffersAvailableException;
+import com.aitrip.exception.external.amadeus.*;
 import com.aitrip.exception.external.phone.InvalidPhoneNumberException;
 import com.aitrip.exception.external.phone.PhoneValidationServiceException;
 import com.aitrip.exception.plan.NullPlanCreateDTOException;
@@ -14,6 +10,7 @@ import com.aitrip.exception.prompt.EmptyUserPromptException;
 import com.aitrip.exception.prompt.NullPromptException;
 import com.aitrip.exception.prompt.PromptNotFoundException;
 import com.aitrip.exception.prompt.PromptValidationException;
+import com.amadeus.exceptions.ResponseException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -182,19 +179,33 @@ public class GlobalExceptionHandler {
     }
 
     /**
-     * Handles NoHotelOffersAvailableException.
+     * Handles FlightSearchFailedException.
+     *
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(FlightSearchFailedException.class)
+    public ResponseEntity<Object> handleFlightSearchFailedException(
+            FlightSearchFailedException ex, WebRequest request) {
+        Map<String, Object> additionalInfo = new LinkedHashMap<>();
+        additionalInfo.put("hint", "The flight search service is currently unavailable. Please try again later.");
+
+        return createTravelErrorResponse(ex, request, HttpStatus.BAD_GATEWAY, additionalInfo);
+    }
+
+    /**
+     * Handles HotelSearchFailedException.
      * 
      * @param ex The exception
      * @param request The web request
      * @return ResponseEntity with error details
      */
-    @ExceptionHandler(NoHotelOffersAvailableException.class)
-    public ResponseEntity<Object> handleNoHotelOffersAvailableException(
-            NoHotelOffersAvailableException ex, WebRequest request) {
+    @ExceptionHandler(HotelSearchFailedException.class)
+    public ResponseEntity<Object> handleHotelSearchFailedException(
+            HotelSearchFailedException ex, WebRequest request) {
         Map<String, Object> additionalInfo = new LinkedHashMap<>();
-        additionalInfo.put("destination", ex.getDestination());
-        additionalInfo.put("startDate", ex.getStartDate());
-        additionalInfo.put("endDate", ex.getEndDate());
+        additionalInfo.put("hint", "No hotels found for the specified criteria. Try different dates or location.");
 
         return createTravelErrorResponse(ex, request, HttpStatus.NOT_FOUND, additionalInfo);
     }
@@ -284,6 +295,23 @@ public class GlobalExceptionHandler {
 
         return new ResponseEntity<>(body, status);
     }
+
+    /**
+     * Handles HotelOfferSearchFailedException.
+     * 
+     * @param ex The exception
+     * @param request The web request
+     * @return ResponseEntity with error details
+     */
+    @ExceptionHandler(HotelOfferSearchFailedException.class)
+    public ResponseEntity<Object> handleHotelOfferSearchFailedException(
+            HotelOfferSearchFailedException ex, WebRequest request) {
+        Map<String, Object> additionalInfo = new LinkedHashMap<>();
+        additionalInfo.put("hint", "Try different dates, increase your search radius, or check for available hotels in another city.");
+
+        return createTravelErrorResponse(ex, request, HttpStatus.NOT_FOUND, additionalInfo);
+    }
+
 
     /**
      * Creates a standardized error response for Amadeus configuration exceptions.
