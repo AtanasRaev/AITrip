@@ -1,9 +1,9 @@
 package com.aitrip.service;
 
 import com.aitrip.config.AmadeusEnvironment;
-import com.aitrip.database.dto.flight.response.FlightResponseDTO;
-import com.aitrip.database.dto.hotel.response.offers.HotelOfferResponseDTO;
 import com.aitrip.database.dto.plan.PlanCreateDTO;
+import com.amadeus.resources.FlightOfferSearch;
+import com.amadeus.resources.HotelOffer;
 
 public interface AmadeusService {
     /**
@@ -13,7 +13,7 @@ public interface AmadeusService {
      * @param environment the Amadeus environment
      * @return the flight response
      */
-    FlightResponseDTO getFlights(PlanCreateDTO planCreateDTO, AmadeusEnvironment environment);
+    FlightOfferSearch[] getFlights(PlanCreateDTO planCreateDTO, AmadeusEnvironment environment);
 
 
     /**
@@ -23,6 +23,6 @@ public interface AmadeusService {
      * @param environment the Amadeus environment
      * @return the hotel offer response
      */
-    HotelOfferResponseDTO getHotelOffers(PlanCreateDTO planCreateDTO, AmadeusEnvironment environment);
+    HotelOffer[] getHotelOffers(PlanCreateDTO planCreateDTO, AmadeusEnvironment environment);
 
 }

@@ -1,110 +1,102 @@
 package com.aitrip.service.impl;
 
-import com.aitrip.config.AmadeusConfig;
 import com.aitrip.config.AmadeusEnvironment;
-import com.aitrip.database.dto.hotel.response.HotelResponseDTO;
-import com.aitrip.database.dto.hotel.response.data.HotelDTO;
-import com.aitrip.database.dto.hotel.response.offers.HotelOfferResponseDTO;
-import com.aitrip.database.dto.plan.PlanCreateDTO;
 import com.aitrip.database.dto.flight.request.FlightRequestDTO;
-import com.aitrip.database.dto.flight.response.FlightResponseDTO;
-import com.aitrip.exception.external.amadeus.NoFlightsAvailableException;
-import com.aitrip.exception.external.amadeus.NoHotelOffersAvailableException;
+import com.aitrip.database.dto.plan.PlanCreateDTO;
+import com.aitrip.exception.external.amadeus.*;
 import com.aitrip.service.AmadeusService;
-import com.aitrip.service.AmadeusTokenService;
-import org.springframework.http.MediaType;
+import com.amadeus.Amadeus;
+import com.amadeus.Params;
+import com.amadeus.exceptions.ResponseException;
+import com.amadeus.resources.FlightOfferSearch;
+import com.amadeus.resources.Hotel;
+import com.amadeus.resources.HotelOffer;
+import com.google.gson.Gson;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestClient;
 
+import java.util.Arrays;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 @Service
 public class AmadeusServiceImpl implements AmadeusService {
-    private final RestClient restClient;
-    private final AmadeusConfig amadeusConfig;
-    private final AmadeusTokenService amadeusTokenService;
+    private static final AmadeusEnvironment[] VALID_ENVIRONMENTS = {
+            AmadeusEnvironment.TEST,
+            AmadeusEnvironment.PRODUCTION
+    };
 
-    public AmadeusServiceImpl(RestClient restClient,
-                              AmadeusConfig amadeusConfig,
-                              AmadeusTokenService amadeusTokenService) {
-        this.restClient = restClient;
-        this.amadeusConfig = amadeusConfig;
-        this.amadeusTokenService = amadeusTokenService;
+    private final Gson gson;
+    private final Amadeus amadeusProd;
+    private final Amadeus amadeusTest;
+
+    public AmadeusServiceImpl(Gson gson,
+                              @Qualifier("amadeusProd") Amadeus amadeusProd,
+                              @Qualifier("amadeusTest") Amadeus amadeusTest) {
+        this.gson = gson;
+        this.amadeusProd = amadeusProd;
+        this.amadeusTest = amadeusTest;
     }
 
     @Override
-    public FlightResponseDTO getFlights(PlanCreateDTO planCreateDTO, AmadeusEnvironment environment) {
-        FlightRequestDTO flightRequest = createFlightRequest(planCreateDTO);
+    public FlightOfferSearch[] getFlights(PlanCreateDTO planCreateDTO, AmadeusEnvironment environment) {
+        try {
+            Amadeus amadeus = this.getAmadeus(environment);
+            FlightRequestDTO flightRequest = createFlightRequest(planCreateDTO);
+            String jsonBody = this.gson.toJson(flightRequest);
 
-        FlightResponseDTO response = this.restClient
-                .post()
-                .uri(this.amadeusConfig.getAmadeusUrl(environment) + "v2/shopping/flight-offers")
-                .contentType(MediaType.APPLICATION_JSON)
-                .header("Authorization", "Bearer " + this.amadeusTokenService.generateAccessToken(environment).getAccessToken())
-                .body(flightRequest)
-                .retrieve()
-                .toEntity(FlightResponseDTO.class)
-                .getBody();
+            FlightOfferSearch[] response = amadeus.shopping.flightOffersSearch.post(jsonBody);
 
-        if (response == null || response.getMeta() == null || response.getMeta().getCount() == 0) {
-            throw new NoFlightsAvailableException(
-                "No flights available for the selected dates",
-                planCreateDTO.getOrigin(),
-                planCreateDTO.getDestination(),
-                planCreateDTO.getStartDate().toString(),
-                planCreateDTO.getEndDate().toString()
-            );
+            if (response == null || response.length == 0) {
+                throw new NoFlightsAvailableException(
+                        "No flights available for the selected dates",
+                        planCreateDTO.getOrigin(),
+                        planCreateDTO.getDestination(),
+                        planCreateDTO.getStartDate().toString(),
+                        planCreateDTO.getEndDate().toString()
+                );
+            }
+
+            return response;
+        } catch (Exception ex) {
+            throw new FlightSearchFailedException("Flight search failed due to an error while calling Amadeus API", ex);
         }
-
-        return response;
     }
-
 
     @Override
-    public HotelOfferResponseDTO getHotelOffers(PlanCreateDTO planCreateDTO, AmadeusEnvironment environment) {
-        HotelResponseDTO hotelResponse = this.getHotels(planCreateDTO.getDestination(), environment);
+    public HotelOffer[] getHotelOffers(PlanCreateDTO planCreateDTO, AmadeusEnvironment environment) {
+        try {
+            Amadeus amadeus = this.getAmadeus(environment);
 
-        if (hotelResponse == null || hotelResponse.getData() == null || hotelResponse.getData().isEmpty()) {
-            throw new NoHotelOffersAvailableException(
-                "No hotels available for the selected destination",
-                planCreateDTO.getDestination(),
-                planCreateDTO.getStartDate().toString(),
-                planCreateDTO.getEndDate().toString()
+            Hotel[] hotelResponse = this.getHotels(planCreateDTO.getDestination(), environment);
+
+            if (hotelResponse.length == 0) {
+                return new HotelOffer[0];
+            }
+
+            String hotelIds = Arrays.stream(hotelResponse)
+                    .map(Hotel::getHotelId)
+                    .collect(Collectors.joining(","));
+
+            HotelOffer[] hotelOffers = amadeus.shopping.hotelOffers.get(Params
+                    .with("hotelIds", hotelIds)
+                    .and("adults", planCreateDTO.getAdults())
+                    .and("checkInDate", planCreateDTO.getStartDate().toString())
+                    .and("checkOutDate", planCreateDTO.getEndDate().toString())
+                    .and("roomQuantity", 1)
+            );
+
+            if (hotelOffers == null || hotelOffers.length == 0) {
+                return new HotelOffer[0];
+            }
+
+            return hotelOffers;
+        } catch (Exception ex) {
+            throw new HotelOfferSearchFailedException(
+                    "Failed to search hotel offers for city: " + planCreateDTO.getDestination(), ex
             );
         }
-
-        List<String> hotelIds = hotelResponse.getData()
-                .stream()
-                .map(HotelDTO::getHotelId)
-                .toList();
-
-        String hotelOffersUri = String.format("/v3/shopping/hotel-offers?hotelIds=%s&checkInDate=%s&checkOutDate=%s&adults=%d&children=%d",
-                String.join(",", hotelIds),
-                planCreateDTO.getStartDate(),
-                planCreateDTO.getEndDate(),
-                planCreateDTO.getAdults(),
-                planCreateDTO.getChildren()
-        );
-
-        HotelOfferResponseDTO response = this.restClient
-                .get()
-                .uri(this.amadeusConfig.getAmadeusUrl(environment) + hotelOffersUri)
-                .header("Authorization", "Bearer " + this.amadeusTokenService.generateAccessToken(environment).getAccessToken())
-                .retrieve()
-                .toEntity(HotelOfferResponseDTO.class)
-                .getBody();
-
-        if (response == null) {
-            response = new HotelOfferResponseDTO();
-            response.setData(new ArrayList<>());
-        } else if (response.getData() == null) {
-            response.setData(new ArrayList<>());
-        }
-
-        return response;
     }
-
 
     //TODO: Consider if we need to add logic to catch an error where the access token has expired and we need to manually renew it.
     private FlightRequestDTO createFlightRequest(PlanCreateDTO planCreateDTO) {
@@ -149,14 +141,40 @@ public class AmadeusServiceImpl implements AmadeusService {
         return flightRequest;
     }
 
-    private HotelResponseDTO getHotels(String destination, AmadeusEnvironment environment) {
-        String hotelSearchUri = String.format("v1/reference-data/locations/hotels/by-city?cityCode=%s", destination);
-        return this.restClient
-                .get()
-                .uri(this.amadeusConfig.getAmadeusUrl(environment) + hotelSearchUri)
-                .header("Authorization", "Bearer " + this.amadeusTokenService.generateAccessToken(environment).getAccessToken())
-                .retrieve()
-                .toEntity(HotelResponseDTO.class)
-                .getBody();
+    private Hotel[] getHotels(String cityCode, AmadeusEnvironment environment) {
+        Amadeus amadeus = this.getAmadeus(environment);
+
+        try {
+            Hotel[] hotels = amadeus.referenceData.locations.hotels.byCity.get(
+                    Params.with("cityCode", cityCode)
+            );
+            if (hotels == null || hotels.length == 0) {
+                return new Hotel[0];
+            }
+            return hotels;
+        } catch (ResponseException e) {
+            throw new HotelSearchFailedException(
+                    "Failed to fetch hotels for city code: " + cityCode, e
+            );
+        }
+    }
+
+    private Amadeus getAmadeus(AmadeusEnvironment env) {
+        return switch (env) {
+            case PRODUCTION -> amadeusProd;
+            case TEST -> amadeusTest;
+            default -> throw new InvalidAmadeusEnvironmentException(
+                    "Invalid environment: " + env,
+                    env.getValue(),
+                    getValidEnvironmentStrings());
+        };
+    }
+
+    private String[] getValidEnvironmentStrings() {
+        String[] validEnvironmentStrings = new String[VALID_ENVIRONMENTS.length];
+        for (int i = 0; i < VALID_ENVIRONMENTS.length; i++) {
+            validEnvironmentStrings[i] = VALID_ENVIRONMENTS[i].getValue();
+        }
+        return validEnvironmentStrings;
     }
 }
