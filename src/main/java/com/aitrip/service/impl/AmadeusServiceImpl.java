@@ -1,7 +1,7 @@
 package com.aitrip.service.impl;
 
 import com.aitrip.config.AmadeusEnvironment;
-import com.aitrip.database.dto.flight.request.FlightRequestDTO;
+import com.aitrip.database.dto.flight.FlightRequestDTO;
 import com.aitrip.database.dto.plan.PlanCreateDTO;
 import com.aitrip.exception.external.amadeus.*;
 import com.aitrip.service.AmadeusService;

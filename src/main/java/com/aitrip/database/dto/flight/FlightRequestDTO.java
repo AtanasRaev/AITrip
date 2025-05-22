@@ -1,4 +1,4 @@
-package com.aitrip.database.dto.flight.request;
+package com.aitrip.database.dto.flight;
 
 import lombok.Getter;
 import lombok.Setter;

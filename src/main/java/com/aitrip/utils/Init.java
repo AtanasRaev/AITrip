@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.io.FileReader;
 import java.util.*;
 
-@Component
+//@Component
 @Profile("!test")
 @RequiredArgsConstructor // Lombok for constructor injection of repositories
 public class Init implements CommandLineRunner {
