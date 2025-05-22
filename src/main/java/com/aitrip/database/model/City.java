@@ -1,11 +1,6 @@
 package com.aitrip.database.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,10 +19,9 @@ public class City {
     @Column(nullable = false)
     private String name;
 
-    @Column(length = 2)
-    private String countryCode;
-
-    private String timezone;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "country_id", nullable = false)
+    private Country country;
 
     private Double latitude;
 
