@@ -5,20 +5,19 @@ import com.aitrip.database.dto.prompt.PromptDTO;
 import com.aitrip.database.dto.prompt.PromptEditDTO;
 import com.aitrip.service.PromptService;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/prompts")
 public class PromptController {
     private final PromptService promptService;
 
-    public PromptController(PromptService promptService) {
-        this.promptService = promptService;
-    }
 
     @GetMapping
     public ResponseEntity<Map<String, Object>> getAllPrompts() {

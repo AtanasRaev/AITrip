@@ -9,22 +9,19 @@ import com.aitrip.exception.prompt.NullPromptException;
 import com.aitrip.exception.prompt.PromptNotFoundException;
 import com.aitrip.service.PromptService;
 import com.openai.models.ChatModel;
+import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @Service
 public class PromptServiceImpl implements PromptService {
     private final PromptRepository promptRepository;
     private final ModelMapper modelMapper;
 
-    public PromptServiceImpl(PromptRepository promptRepository,
-                             ModelMapper modelMapper) {
-        this.promptRepository = promptRepository;
-        this.modelMapper = modelMapper;
-    }
 
     @Override
     public PromptDTO getPromptByPlanName(String planName) {

@@ -13,25 +13,20 @@ import com.aitrip.service.PromptService;
 import com.openai.client.OpenAIClient;
 import com.openai.models.chat.completions.ChatCompletion;
 import com.openai.models.chat.completions.ChatCompletionCreateParams;
+import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @Service
 public class OpenAIServiceImpl implements OpenAIService {
     private final OpenAIClient client;
     private final PromptService promptService;
     private final ModelMapper modelMapper;
 
-    public OpenAIServiceImpl(OpenAIClient client,
-                             PromptService promptService,
-                             ModelMapper modelMapper) {
-        this.client = client;
-        this.promptService = promptService;
-        this.modelMapper = modelMapper;
-    }
 
     @Override
     public PlanPageDTO createPlan(PlanCreateDTO planCreateDTO) {
