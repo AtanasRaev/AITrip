@@ -30,6 +30,7 @@ dependencies {
     implementation 'com.github.ben-manes.caffeine:caffeine:3.2.0'
     implementation 'com.amadeus:amadeus-java:6.0.0'
     implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.opencsv:opencsv:5.9'
 
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.postgresql:postgresql'
