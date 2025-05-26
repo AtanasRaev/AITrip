@@ -52,7 +52,13 @@ public class AmadeusServiceImpl implements AmadeusService {
                 );
             }
 
-            return response;
+            sortFlightsByPrice(response);
+
+            int resultCount = Math.min(response.length, 3);
+            FlightOfferSearch[] topResults = new FlightOfferSearch[resultCount];
+            System.arraycopy(response, 0, topResults, 0, resultCount);
+
+            return topResults;
         } catch (Exception ex) {
             throw new FlightSearchFailedException("Flight search failed due to an error while calling Amadeus API", ex);
         }
@@ -85,7 +91,13 @@ public class AmadeusServiceImpl implements AmadeusService {
                 return new HotelOffer[0];
             }
 
-            return hotelOffers;
+            sortHotelOffersByPrice(hotelOffers);
+
+            int resultCount = Math.min(hotelOffers.length, 3);
+            HotelOffer[] topResults = new HotelOffer[resultCount];
+            System.arraycopy(hotelOffers, 0, topResults, 0, resultCount);
+
+            return topResults;
         } catch (Exception ex) {
             throw new HotelOfferSearchFailedException(
                     "Failed to search hotel offers for city: " + planCreateDTO.getDestination(), ex
@@ -93,7 +105,6 @@ public class AmadeusServiceImpl implements AmadeusService {
         }
     }
 
-    //TODO: Consider if we need to add logic to catch an error where the access token has expired and we need to manually renew it.
     private FlightRequestDTO createFlightRequest(PlanCreateDTO planCreateDTO) {
         FlightRequestDTO flightRequest = new FlightRequestDTO();
         FlightRequestDTO.DestinationDTO origin = new FlightRequestDTO.DestinationDTO(
@@ -136,6 +147,22 @@ public class AmadeusServiceImpl implements AmadeusService {
         return flightRequest;
     }
 
+    private void sortFlightsByPrice(FlightOfferSearch[] flights) {
+        if (flights == null || flights.length <= 1) {
+            return;
+        }
+
+        Arrays.sort(flights, (flight1, flight2) -> {
+            try {
+                double price1 = Double.parseDouble(flight1.getPrice().getTotal());
+                double price2 = Double.parseDouble(flight2.getPrice().getTotal());
+                return Double.compare(price1, price2);
+            } catch (Exception e) {
+                return 0;
+            }
+        });
+    }
+
     private Hotel[] getHotels(String cityCode, AmadeusEnvironment environment) {
         Amadeus amadeus = this.getAmadeus(environment);
 
@@ -152,6 +179,22 @@ public class AmadeusServiceImpl implements AmadeusService {
                     "Failed to fetch hotels for city code: " + cityCode, e
             );
         }
+    }
+
+    private void sortHotelOffersByPrice(HotelOffer[] hotelOffers) {
+        if (hotelOffers == null || hotelOffers.length <= 1) {
+            return;
+        }
+
+        Arrays.sort(hotelOffers, (offer1, offer2) -> {
+            try {
+                double price1 = Double.parseDouble(offer1.getOffers()[0].getPrice().getTotal());
+                double price2 = Double.parseDouble(offer2.getOffers()[0].getPrice().getTotal());
+                return Double.compare(price1, price2);
+            } catch (Exception e) {
+                return 0;
+            }
+        });
     }
 
     private Amadeus getAmadeus(AmadeusEnvironment env) {
