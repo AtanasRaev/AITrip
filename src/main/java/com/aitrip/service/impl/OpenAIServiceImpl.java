@@ -10,6 +10,8 @@ import com.aitrip.exception.prompt.EmptyUserPromptException;
 import com.aitrip.exception.prompt.NullPromptException;
 import com.aitrip.service.OpenAIService;
 import com.aitrip.service.PromptService;
+import com.amadeus.resources.FlightOfferSearch;
+import com.amadeus.resources.HotelOffer;
 import com.openai.client.OpenAIClient;
 import com.openai.models.chat.completions.ChatCompletion;
 import com.openai.models.chat.completions.ChatCompletionCreateParams;
@@ -17,6 +19,7 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,15 +32,15 @@ public class OpenAIServiceImpl implements OpenAIService {
 
 
     @Override
-    public PlanPageDTO createPlan(PlanCreateDTO planCreateDTO) {
+    public PlanPageDTO createPlan(PlanCreateDTO planCreateDTO, FlightOfferSearch[] flights, HotelOffer[] hotelOffers) {
         if (planCreateDTO == null) {
             throw new NullPlanCreateDTOException();
         }
 
         PromptDTO prompt = getAndValidatePrompt(planCreateDTO.getPlanName());
 
-        String userPrompt = setVariables(planCreateDTO, prompt.getUserPrompt());
-        String systemPrompt = setVariables(planCreateDTO, prompt.getSystemPrompt());
+        String userPrompt = setVariables(planCreateDTO, prompt.getUserPrompt(), flights, hotelOffers);
+        String systemPrompt = setVariables(planCreateDTO, prompt.getSystemPrompt(), flights, hotelOffers);
 
         prompt.setUserPrompt(userPrompt);
         prompt.setSystemPrompt(systemPrompt);
@@ -107,8 +110,8 @@ public class OpenAIServiceImpl implements OpenAIService {
         }
     }
 
-    private String setVariables(PlanCreateDTO planCreateDTO, String prompt) {
-        Map<String, String> replacements = buildReplacementsMap(planCreateDTO);
+    private String setVariables(PlanCreateDTO planCreateDTO, String prompt, FlightOfferSearch[] flights, HotelOffer[] hotelOffers) {
+        Map<String, String> replacements = buildReplacementsMap(planCreateDTO, flights, hotelOffers );
 
         for (Map.Entry<String, String> entry : replacements.entrySet()) {
             String placeholder = "{" + entry.getKey() + "}";
@@ -122,7 +125,7 @@ public class OpenAIServiceImpl implements OpenAIService {
         return prompt;
     }
 
-    private Map<String, String> buildReplacementsMap(PlanCreateDTO planCreateDTO) {
+    private Map<String, String> buildReplacementsMap(PlanCreateDTO planCreateDTO, FlightOfferSearch[] flights, HotelOffer[] hotelOffers ) {
         Map<String, String> replacements = new HashMap<>();
 
         replacements.put("origin", planCreateDTO.getOrigin());
@@ -137,6 +140,68 @@ public class OpenAIServiceImpl implements OpenAIService {
         replacements.put("adults", String.valueOf(planCreateDTO.getAdults()));
         replacements.put("children", String.valueOf(planCreateDTO.getChildren()));
 
+        StringBuilder flightsSb = new StringBuilder();
+        for (int i = 0; i < flights.length; i++) {
+            flightsSb.append("Flight #").append(i + 1).append("\n");
+
+            FlightOfferSearch flight = flights[i];
+            FlightOfferSearch.Itinerary[] itineraries = flight.getItineraries();
+            if (itineraries.length > 0) {
+                flightsSb.append("Outbound:\n");
+                appendItinerary(itineraries[0], flightsSb, flight);
+            }
+            if (itineraries.length > 1) {
+                flightsSb.append("\nReturn:\n");
+                appendItinerary(itineraries[1], flightsSb, flight);
+            }
+
+
+        }
+        replacements.put("flights", flightsSb.toString());
+
         return replacements;
     }
+
+    private void appendItinerary(FlightOfferSearch.Itinerary itinerary, StringBuilder flightsSb, FlightOfferSearch flight) {
+        FlightOfferSearch.SearchSegment[] segments = itinerary.getSegments();
+
+        for (FlightOfferSearch.SearchSegment segment : segments) {
+            flightsSb.append(segment.getDeparture().getIataCode())
+                    .append(" ")
+                    .append(segment.getDeparture().getAt())
+                    .append(" -> ")
+                    .append(segment.getArrival().getIataCode())
+                    .append(" ")
+                    .append(segment.getArrival().getAt())
+                    .append(" ")
+                    .append("(Duration: ").append(getItineraryDuration(segment.getDuration()))
+                    .append(")\n");
+        }
+
+        String duration = getItineraryDuration(itinerary.getDuration());
+
+        flightsSb.append("Total flight duration: ")
+                .append(duration)
+                .append("\n");
+
+        flightsSb.append("Stops: ")
+                .append(segments.length - 1)
+                .append("\n");
+
+        flightsSb.append("Price: ")
+                .append(flight.getPrice().getTotal())
+                .append(" ")
+                .append(flight.getPrice().getCurrency())
+                .append("\n\n");
+    }
+
+    private String getItineraryDuration(String isoDuration) {
+        Duration duration = Duration.parse(isoDuration);
+
+        int hours = duration.toHoursPart();
+        int minutes = duration.toMinutesPart();
+
+        return String.format("%02d:%02d", hours, minutes);
+    }
+
 }
