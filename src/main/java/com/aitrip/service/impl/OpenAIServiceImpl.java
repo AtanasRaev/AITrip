@@ -111,7 +111,7 @@ public class OpenAIServiceImpl implements OpenAIService {
     }
 
     private String setVariables(PlanCreateDTO planCreateDTO, String prompt, FlightOfferSearch[] flights, HotelOffer[] hotelOffers) {
-        Map<String, String> replacements = buildReplacementsMap(planCreateDTO, flights, hotelOffers );
+        Map<String, String> replacements = buildReplacementsMap(planCreateDTO, flights, hotelOffers);
 
         for (Map.Entry<String, String> entry : replacements.entrySet()) {
             String placeholder = "{" + entry.getKey() + "}";
@@ -125,7 +125,7 @@ public class OpenAIServiceImpl implements OpenAIService {
         return prompt;
     }
 
-    private Map<String, String> buildReplacementsMap(PlanCreateDTO planCreateDTO, FlightOfferSearch[] flights, HotelOffer[] hotelOffers ) {
+    private Map<String, String> buildReplacementsMap(PlanCreateDTO planCreateDTO, FlightOfferSearch[] flights, HotelOffer[] hotelOffers) {
         Map<String, String> replacements = new HashMap<>();
 
         replacements.put("origin", planCreateDTO.getOrigin());
@@ -154,12 +154,89 @@ public class OpenAIServiceImpl implements OpenAIService {
                 flightsSb.append("\nReturn:\n");
                 appendItinerary(itineraries[1], flightsSb, flight);
             }
-
-
         }
         replacements.put("flights", flightsSb.toString());
 
+        StringBuilder hotelsSb = new StringBuilder();
+        for (int i = 0; i < hotelOffers.length; i++) {
+            hotelsSb.append("Hotel #").append(i + 1).append("\n");
+            appendHotelOffer(hotelOffers[i], hotelsSb);
+        }
+        replacements.put("hotels", hotelsSb.toString());
+
         return replacements;
+    }
+
+    private void appendHotelOffer(HotelOffer hotelOffer, StringBuilder hotelsSb) {
+        if (hotelOffer.getHotel() != null) {
+            if (hotelOffer.getHotel().getName() != null) {
+                hotelsSb.append("Name: ").append(hotelOffer.getHotel().getName()).append("\n");
+            }
+            
+            if (hotelOffer.getHotel().getRating() != null) {
+                hotelsSb.append("Rating: ").append(hotelOffer.getHotel().getRating()).append(" stars\n");
+            }
+
+            if (hotelOffer.getHotel().getAddress() != null) {
+                StringBuilder addressSb = new StringBuilder();
+                if (hotelOffer.getHotel().getAddress().getLines() != null && 
+                    hotelOffer.getHotel().getAddress().getLines().length > 0) {
+                    addressSb.append(String.join(", ", hotelOffer.getHotel().getAddress().getLines()));
+                }
+                if (hotelOffer.getHotel().getAddress().getCityName() != null) {
+                    if (!addressSb.isEmpty()) addressSb.append(", ");
+                    addressSb.append(hotelOffer.getHotel().getAddress().getCityName());
+                }
+                if (hotelOffer.getHotel().getAddress().getCountryCode() != null) {
+                    if (!addressSb.isEmpty()) addressSb.append(", ");
+                    addressSb.append(hotelOffer.getHotel().getAddress().getCountryCode());
+                }
+                
+                if (!addressSb.isEmpty()) {
+                    hotelsSb.append("Address: ").append(addressSb.toString()).append("\n");
+                }
+            }
+        }
+
+        if (hotelOffer.getOffers() != null && hotelOffer.getOffers().length > 0) {
+            HotelOffer.Offer bestOffer = hotelOffer.getOffers()[0];
+            
+            if (bestOffer.getDescription().getLang() != null) {
+                hotelsSb.append("Description: ").append(bestOffer.getDescription().getText()).append("\n");
+            }
+
+            if (bestOffer.getRoom() != null) {
+                if (bestOffer.getRoom().getType() != null) {
+                    hotelsSb.append("Room Type: ").append(bestOffer.getRoom().getType()).append("\n");
+                }
+                
+                if (bestOffer.getRoom().getTypeEstimated() != null && 
+                    bestOffer.getRoom().getTypeEstimated().getCategory() != null) {
+                    hotelsSb.append("Room Category: ").append(bestOffer.getRoom().getTypeEstimated().getCategory()).append("\n");
+                }
+            }
+
+            if (bestOffer.getGuests() != null && bestOffer.getGuests().getAdults() != null) {
+                hotelsSb.append("Guests: ").append(bestOffer.getGuests().getAdults()).append(" adults\n");
+            }
+
+            if (bestOffer.getPrice() != null) {
+                hotelsSb.append("Price: ");
+                if (bestOffer.getPrice().getTotal() != null) {
+                    hotelsSb.append(bestOffer.getPrice().getTotal());
+                }
+                if (bestOffer.getPrice().getCurrency() != null) {
+                    hotelsSb.append(" ").append(bestOffer.getPrice().getCurrency());
+                }
+                hotelsSb.append("\n");
+            }
+
+            if (bestOffer.getRateCode() != null) {
+                hotelsSb.append("Rate Type: ").append(bestOffer.getRateCode()).append("\n");
+            }
+        }
+
+        hotelsSb.append("\n");
     }
 
     private void appendItinerary(FlightOfferSearch.Itinerary itinerary, StringBuilder flightsSb, FlightOfferSearch flight) {
@@ -203,5 +280,4 @@ public class OpenAIServiceImpl implements OpenAIService {
 
         return String.format("%02d:%02d", hours, minutes);
     }
-
 }
